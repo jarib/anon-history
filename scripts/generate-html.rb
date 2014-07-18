@@ -10,6 +10,7 @@ require 'set'
 title_source = '...unknown...'
 wiki_lang    = 'en'
 twitter      = nil
+page         = 0
 
 OptionParser.new do |opts|
   opts.on('-s', '--source SOURCE_NAME') { |s| title_source = s }
@@ -47,8 +48,8 @@ rows.each do |row|
   ip_int = IPAddr.new(row['contributor_ip']).to_i
   actors = range_to_actor.select { |range, actor| range.include?(ip_int) }.map { |_, actor| actor }
 
-  if actors.size > 1
-    raise "multiple actors for #{row.inspect}"
+  if actors.uniq.size > 1
+    raise "multiple actors (#{actors.inspect}) for #{row.inspect}"
   end
 
   actor = actors.first
