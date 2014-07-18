@@ -9,9 +9,11 @@ require 'set'
 
 title_source = '...unknown...'
 wiki_lang    = 'en'
+twitter      = nil
 
 OptionParser.new do |opts|
   opts.on('-s', '--source SOURCE_NAME') { |s| title_source = s }
+  opts.on('-t', '--twitter USERNAME') { |t| twitter = t }
   opts.on('-w', '--wiki WIKI_LANG') { |w| wiki_lang = w }
   opts.on('-h', '--help') { puts opts; exit 1 }
 end.parse!(ARGV)

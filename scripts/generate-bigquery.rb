@@ -5,7 +5,7 @@ require 'open-uri'
 require 'ipaddr'
 
 if ARGV.size != 1
-  abort "USAGE: #{$PROGRAM_NAME} http://.../ranges.json"
+  abort "USAGE: #{$PROGRAM_NAME} ranges.json"
 end
 
 template = <<SQL
