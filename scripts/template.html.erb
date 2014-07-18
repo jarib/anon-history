@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <title>Anonymous Wikipedia edits from <%= title_source %></title>
+
+    <link href="../styles.css" media="all" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+      google.load("visualization", "1", {packages:["corechart"]});
+      google.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable(<%= chart_data.to_json %>);
+
+        var options = {
+          title: 'Number of edits',
+          legend: { position: 'bottom' },
+          curveType: 'function',
+          animation: { duration: 1000, easing: 'in' },
+          chartArea: { width: '90%', height: '70%', left: '8%', top: '8%' },
+          vAxis: {
+            viewWindowMode: 'explicit',
+            viewWindow: { min: 0 }
+          }
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('chart'));
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+
+  <body class="container">
+    <h2>Anonymous Wikipedia edits from <%= title_source %></h2>
+
+    <p>
+      This is a list of all anonymous edits of <a href="http://<%= wiki_lang %>.wikipedia.org"><%= wiki_lang %>.wikipedia.org</a> made from the IP addresses of <%= title_source %> from 2002-2010.
+      A total of <%= rows.size %> edits were found. The data comes from Google BigQuery's <a href="https://developers.google.com/bigquery/docs/dataset-wikipedia">Wikipedia dataset</a>.
+    </p>
+
+    <p>
+      You can <a href="data.csv">download</a> the raw data used for this page as CSV or see the <a href="ranges.json">IP ranges</a> used to find the edits.
+    </p>
+
+    <p style="text-align: center">
+      Questions? <a href="mailto:jari.bakken@gmail.com">Email</a> or <a href="https://twitter.com/jarib">tweet</a> me.
+    </p>
+
+    <div id="chart"></div>
+
+    <table cellspacing=0 cellpadding=0>
+      <thead>
+        <tr>
+          <th style="width: 10%">Title</th>
+          <th>Date</th>
+          <th>Source</th>
+          <th>IP</th>
+          <th style="text-align: right"></th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <% rows.each do |row|  %>
+          <tr>
+            <td><%= row['title'] %></td>
+            <td><%= row['human_date'] %></td>
+            <td><%= row['source'] %></td>
+            <td><%= row['contributor_ip'] %></td>
+            <td><a target="_blank" href="http://<%= wiki_lang %>.wikipedia.org/w/index.php?diff=<%= row['revision_id'] %>">Compare</a></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-26481142-7', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </body>
+</html>
