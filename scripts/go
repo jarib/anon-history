@@ -24,6 +24,8 @@ ranges_path.open('w') { |io| io << {ranges: ranges}.to_json }
 query = `scripts/generate-bigquery.rb #{ranges_path} 2>&1`
 abort query unless $?.success?
 
+IO.popen("pbcopy", "w") { |io| io << query; io.close }
+
 puts "Execute this query:\n\n #{query} \n\n"
 puts "Download results to: \n\n\t #{data_path} \n\n"
 puts "Then press any key"
@@ -33,6 +35,10 @@ STDIN.gets || abort
 html = `scripts/generate-html.rb --source '#{source}' --twitter '#{twitter}' #{data_path} #{ranges_path} 2>&1`
 abort html unless $?.success?
 html_path.open('w') { |io| io << html }
+
+puts "Add to index.html: \n\n"
+
+
 
 if `which open` && $?.success?
   `open http://localhost:8080/#{twitter}/2002-2010/`

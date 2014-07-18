@@ -38,6 +38,10 @@ td, th {
     padding: 3px;
 }
 
+dl > dd {
+    padding-bottom: 1em;
+}
+
 tr:hover {
     background-color: #efefef;
 }
