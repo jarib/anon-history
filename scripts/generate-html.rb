@@ -66,6 +66,8 @@ end
 actors = actor_counts_by_year.keys.sort
 chart_data = [["Year", *actors]]
 
+years.delete(2010) # incomplete year
+
 years.sort.each do |year|
   actor_values = actors.map { |a| actor_counts_by_year[a][year] }
   chart_data << [year.to_s, *actor_values]

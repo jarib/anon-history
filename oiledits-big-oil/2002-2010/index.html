@@ -12,7 +12,7 @@
       google.load("visualization", "1", {packages:["corechart"]});
       google.setOnLoadCallback(drawChart);
       function drawChart() {
-        var data = google.visualization.arrayToDataTable([["Year","BP","Chevron","ConocoPhillips","Exxon Mobil","Halliburton","Koch Industries","Total S.A."],["2002",0,2,0,0,0,0,0],["2003",0,1,1,1,0,1,0],["2004",24,26,1,57,0,1,0],["2005",224,38,35,357,0,20,30],["2006",308,372,161,251,54,42,133],["2007",453,342,545,629,60,29,198],["2008",341,325,563,348,56,48,115],["2009",408,203,488,308,142,61,117],["2010",28,23,19,23,25,13,5]]);
+        var data = google.visualization.arrayToDataTable([["Year","BP","Chevron","ConocoPhillips","Exxon Mobil","Halliburton","Koch Industries","Total S.A."],["2002",0,2,0,0,0,0,0],["2003",0,1,1,1,0,1,0],["2004",24,26,1,57,0,1,0],["2005",224,38,35,357,0,20,30],["2006",308,372,161,251,54,42,133],["2007",453,342,545,629,60,29,198],["2008",341,325,563,348,56,48,115],["2009",408,203,488,308,142,61,117]]);
 
         var options = {
           title: 'Number of edits',
@@ -26,7 +26,7 @@
           }
         };
 
-        var chart = new google.visualization.LineChart(document.getElementById('chart'));
+        var chart = new google.visualization.ColumnChart(document.getElementById('chart'));
         chart.draw(data, options);
       }
     </script>

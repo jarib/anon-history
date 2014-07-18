@@ -12,7 +12,7 @@
       google.load("visualization", "1", {packages:["corechart"]});
       google.setOnLoadCallback(drawChart);
       function drawChart() {
-        var data = google.visualization.arrayToDataTable([["Year","Canada Centre for Inland Waters","Canadian Department of National Defence","Canadian House of Commons","Department of Justice Canada","Environment Canada","Federal Court of Canada","Government of Canada","Library and Archives Canada","Natural Resources Canada","Statistics Canada"],["2002",0,1,2,1,0,0,0,0,5,0],["2003",0,5,0,0,0,0,1,15,2,8],["2004",2,352,35,0,31,0,4,3,8,5],["2005",6,482,165,12,62,7,5,10,79,13],["2006",8,1356,660,32,174,16,6,76,126,49],["2007",32,770,723,26,363,11,971,68,183,47],["2008",11,164,471,70,124,3,164,47,213,73],["2009",13,368,564,67,228,10,175,35,137,65],["2010",0,63,34,7,60,0,7,3,5,7]]);
+        var data = google.visualization.arrayToDataTable([["Year","Canada Centre for Inland Waters","Canadian Department of National Defence","Canadian House of Commons","Department of Justice Canada","Environment Canada","Federal Court of Canada","Government of Canada","Library and Archives Canada","Natural Resources Canada","Statistics Canada"],["2002",0,1,2,1,0,0,0,0,5,0],["2003",0,5,0,0,0,0,1,15,2,8],["2004",2,352,35,0,31,0,4,3,8,5],["2005",6,482,165,12,62,7,5,10,79,13],["2006",8,1356,660,32,174,16,6,76,126,49],["2007",32,770,723,26,363,11,971,68,183,47],["2008",11,164,471,70,124,3,164,47,213,73],["2009",13,368,564,67,228,10,175,35,137,65]]);
 
         var options = {
           title: 'Number of edits',
@@ -26,7 +26,7 @@
           }
         };
 
-        var chart = new google.visualization.LineChart(document.getElementById('chart'));
+        var chart = new google.visualization.ColumnChart(document.getElementById('chart'));
         chart.draw(data, options);
       }
     </script>

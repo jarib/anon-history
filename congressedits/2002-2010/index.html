@@ -12,7 +12,7 @@
       google.load("visualization", "1", {packages:["corechart"]});
       google.setOnLoadCallback(drawChart);
       function drawChart() {
-        var data = google.visualization.arrayToDataTable([["Year","US House of Representatives","US Senate"],["2003",4,0],["2004",111,28],["2005",876,467],["2006",1876,783],["2007",1454,684],["2008",1035,578],["2009",971,526],["2010",62,17]]);
+        var data = google.visualization.arrayToDataTable([["Year","US House of Representatives","US Senate"],["2003",4,0],["2004",111,28],["2005",876,467],["2006",1876,783],["2007",1454,684],["2008",1035,578],["2009",971,526]]);
 
         var options = {
           title: 'Number of edits',
@@ -26,7 +26,7 @@
           }
         };
 
-        var chart = new google.visualization.LineChart(document.getElementById('chart'));
+        var chart = new google.visualization.ColumnChart(document.getElementById('chart'));
         chart.draw(data, options);
       }
     </script>

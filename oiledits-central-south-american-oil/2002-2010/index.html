@@ -12,7 +12,7 @@
       google.load("visualization", "1", {packages:["corechart"]});
       google.setOnLoadCallback(drawChart);
       function drawChart() {
-        var data = google.visualization.arrayToDataTable([["Year","Petrobras","Petroleos Mexicanos","YPF"],["2004",0,6,0],["2005",1,21,0],["2006",26,47,16],["2007",0,67,17],["2008",1,242,31],["2009",2,34,12],["2010",0,1,4]]);
+        var data = google.visualization.arrayToDataTable([["Year","Petrobras","Petroleos Mexicanos","YPF"],["2004",0,6,0],["2005",1,21,0],["2006",26,47,16],["2007",0,67,17],["2008",1,242,31],["2009",2,34,12]]);
 
         var options = {
           title: 'Number of edits',
@@ -26,7 +26,7 @@
           }
         };
 
-        var chart = new google.visualization.LineChart(document.getElementById('chart'));
+        var chart = new google.visualization.ColumnChart(document.getElementById('chart'));
         chart.draw(data, options);
       }
     </script>

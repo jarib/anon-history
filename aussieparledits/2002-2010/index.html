@@ -12,7 +12,7 @@
       google.load("visualization", "1", {packages:["corechart"]});
       google.setOnLoadCallback(drawChart);
       function drawChart() {
-        var data = google.visualization.arrayToDataTable([["Year","Australian Department of Parliamentary Services","Ministry of Premier & Cabinet of WA","Northern Territory Government","Parliament of Victoria","Parliament of Western Australia"],["2003",0,0,2,0,0],["2004",0,0,6,0,0],["2005",0,17,101,9,9],["2006",55,25,1475,98,0],["2007",388,24,583,86,1],["2008",622,23,510,40,2],["2009",201,40,343,44,0],["2010",17,0,27,0,0]]);
+        var data = google.visualization.arrayToDataTable([["Year","Australian Department of Parliamentary Services","Ministry of Premier & Cabinet of WA","Northern Territory Government","Parliament of Victoria","Parliament of Western Australia"],["2003",0,0,2,0,0],["2004",0,0,6,0,0],["2005",0,17,101,9,9],["2006",55,25,1475,98,0],["2007",388,24,583,86,1],["2008",622,23,510,40,2],["2009",201,40,343,44,0]]);
 
         var options = {
           title: 'Number of edits',
@@ -26,7 +26,7 @@
           }
         };
 
-        var chart = new google.visualization.LineChart(document.getElementById('chart'));
+        var chart = new google.visualization.ColumnChart(document.getElementById('chart'));
         chart.draw(data, options);
       }
     </script>
@@ -38,10 +38,6 @@
     <p>
       This is a list of all anonymous edits of <a href="http://en.wikipedia.org">en.wikipedia.org</a> made from the IP addresses of Australian Parliamentary Services from 2002-2010 (<a href="http://jarib.github.io/anon-history">other sources</a>).
       A total of 4748 edits were found. The data comes from Google BigQuery's <a href="https://developers.google.com/bigquery/docs/dataset-wikipedia">Wikipedia dataset</a>.
-    </p>
-
-    <p>
-      You can <a href="data.csv">download</a> the raw data used for this page as CSV or see the <a href="ranges.json">IP ranges</a> used to find the edits.
     </p>
 
     <p>

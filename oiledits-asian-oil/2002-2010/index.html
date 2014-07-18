@@ -12,7 +12,7 @@
       google.load("visualization", "1", {packages:["corechart"]});
       google.setOnLoadCallback(drawChart);
       function drawChart() {
-        var data = google.visualization.arrayToDataTable([["Year","Saudi Arabian Oil Company"],["2004",20],["2005",214],["2006",419],["2007",434],["2008",413],["2009",491],["2010",144]]);
+        var data = google.visualization.arrayToDataTable([["Year","Saudi Arabian Oil Company"],["2004",20],["2005",214],["2006",419],["2007",434],["2008",413],["2009",491]]);
 
         var options = {
           title: 'Number of edits',
@@ -26,7 +26,7 @@
           }
         };
 
-        var chart = new google.visualization.LineChart(document.getElementById('chart'));
+        var chart = new google.visualization.ColumnChart(document.getElementById('chart'));
         chart.draw(data, options);
       }
     </script>
