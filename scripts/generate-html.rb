@@ -31,7 +31,12 @@ range_to_actor = {}
 ranges.each do |name, ranges_|
   ranges_.each do |left, right|
 
-    range = IPAddr.new(left).to_i..IPAddr.new(right).to_i
+    if right.nil?
+      range = IPAddr.new(left) # netmask
+    else
+      range = IPAddr.new(left).to_i..IPAddr.new(right).to_i
+    end
+
     range_to_actor[range] = name
   end
 end
@@ -65,5 +70,6 @@ end
 
 rows = rows.sort_by { |e| -e['timestamp'].to_i }
 
-puts ERB.new(File.read('./template.html.erb'), 0, "%-<>").result(binding)
+template = File.read(File.expand_path('../template.html.erb', __FILE__))
+puts ERB.new(template, 0, "%-<>").result(binding)
 

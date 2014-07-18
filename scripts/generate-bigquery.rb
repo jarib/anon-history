@@ -1,6 +1,12 @@
 #!/usr/bin/env ruby
 
 require 'json'
+require 'open-uri'
+require 'ipaddr'
+
+if ARGV.size != 1
+  abort "USAGE: #{$PROGRAM_NAME} http://.../ranges.json"
+end
 
 template = <<SQL
 SELECT
@@ -20,9 +26,15 @@ SQL
 
 conditions = []
 
-ranges = JSON.parse(STDIN.read).fetch('ranges')
+ranges = JSON.parse(open(ARGV.first).read).fetch('ranges')
 ranges.each do |name, ranges|
   ranges.each do |start, stop|
+    if stop.nil?
+      range = IPAddr.new(start).to_range
+      start = range.first.to_s
+      stop = range.last.to_s
+    end
+
     conditions << "(PARSE_IP(contributor_ip) >= PARSE_IP(#{start.inspect}) AND PARSE_IP(contributor_ip) <= PARSE_IP(#{stop.inspect})) # #{name}"
   end
 end
