@@ -12,7 +12,7 @@ template = <<SQL
 SELECT
   id as article_id,
   title,
-  CONCAT('http://en.wikipedia.org/w/index.php?diff=', STRING(revision_id)) AS diff_url,
+  CONCAT("http://en.wikipedia.org/w/index.php?diff=", STRING(revision_id)) AS diff_url,
   revision_id,
   SEC_TO_TIMESTAMP(timestamp) AS ts,
   timestamp,
