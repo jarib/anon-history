@@ -5,7 +5,7 @@
 
     <title>Anonymous Wikipedia edits from <%= title_source %></title>
 
-    <link href="../../styles.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="../../../styles.css" media="all" rel="stylesheet" type="text/css" />
 
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type="text/javascript">
@@ -36,8 +36,15 @@
     <h2>Anonymous Wikipedia edits from <%= title_source %></h2>
 
     <p>
-      This is a list of all anonymous edits of <a href="http://<%= wiki_lang %>.wikipedia.org"><%= wiki_lang %>.wikipedia.org</a> made from the IP addresses of <%= title_source %> from 2002-2010 (<a href="http://jarib.github.io/anon-history">other sources</a>).
-      A total of <%= rows.size %> edits were found. The data comes from Google BigQuery's <a href="https://developers.google.com/bigquery/docs/dataset-wikipedia">Wikipedia dataset</a>.
+      This is a list of all anonymous edits of <a href="http://<%= wiki_lang %>.wikipedia.org"><%= wiki_lang %>.wikipedia.org</a> made from the IP addresses of <%= title_source %> from <%= year_range %> (<a href="http://jarib.github.io/anon-history">other sources</a>).
+      A total of <%= rows.size %> edits were found.
+
+      The data comes from
+      <% if year_range == '2002-2014' %>
+        Google BigQuery's <a href="https://developers.google.com/bigquery/docs/dataset-wikipedia">Wikipedia dataset</a>.
+      <% else %>
+        <a href="http://dumps.wikimedia.org/">dumps.wikimedia.org</a>
+      <% end %>
     </p>
 
     <p>

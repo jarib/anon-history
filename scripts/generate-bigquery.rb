@@ -24,7 +24,7 @@ end
 if old
   table_name = "publicdata:samples.wikipedia"
 else
-  table_name = "wiki.#{lang}"
+  table_name = "wikis.#{lang}"
 end
 
 template = <<SQL

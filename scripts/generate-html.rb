@@ -11,6 +11,7 @@ title_source = '...unknown...'
 wiki_lang    = 'en'
 twitter      = nil
 page         = 0
+year_range   = '2002-2010'
 
 OptionParser.new do |opts|
   opts.on('-s', '--source SOURCE_NAME') { |s| title_source = s }
@@ -74,6 +75,7 @@ years.sort.each do |year|
 end
 
 rows = rows.sort_by { |e| -e['timestamp'].to_i }
+year_range = "#{rows.last['time'].year}-#{rows.first['time'].year}"
 
 template = File.read(File.expand_path('../template.html.erb', __FILE__))
 puts ERB.new(template, 0, "%-<>").result(binding)

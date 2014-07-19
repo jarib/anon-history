@@ -20,7 +20,8 @@ else
   old = false
 end
 
-path = Pathname.new("../../#{twitter}/#{lang}/#{old ? '2002-2010' : '2004-2014'}").expand_path(__FILE__)
+year_range = old ? '2002-2010' : 'latest'
+path = Pathname.new("../../#{twitter}/#{lang}/#{year_range}").expand_path(__FILE__)
 path.mkpath
 
 ranges_path = path.join('ranges.json')
@@ -32,7 +33,7 @@ ranges_path.open('w') { |io| io << {ranges: ranges}.to_json }
 if old
   query = `scripts/generate-bigquery.rb --old #{ranges_path} 2>&1`
 else
-  query = `scripts/generate-bigquery.rb #{old} --wiki #{lang} #{ranges_path} 2>&1`
+  query = `scripts/generate-bigquery.rb --wiki #{lang} #{ranges_path} 2>&1`
 end
 
 abort query unless $?.success?
@@ -52,6 +53,6 @@ html_path.open('w') { |io| io << html }
 puts "Add to index.html: \n\n"
 
 if `which open` && $?.success?
-  `open http://localhost:8080/#{twitter}/2002-2010/`
+  `open http://localhost:8080/#{twitter}/#{lang}/#{year_range}/`
 end
 
