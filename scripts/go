@@ -13,7 +13,14 @@ lang    = ARGV.shift or abort "no wiki lang given"
 conf   = JSON.parse(open(url).read)
 ranges = conf['ranges'] || conf['accounts'].first['ranges']
 
-path = Pathname.new("../../#{twitter}/2002-2010").expand_path(__FILE__)
+if lang == 'en.public'
+  lang = 'en'
+  old  = true
+else
+  old = false
+end
+
+path = Pathname.new("../../#{twitter}/#{lang}/#{old ? '2002-2010' : '2004-2014'}").expand_path(__FILE__)
 path.mkpath
 
 ranges_path = path.join('ranges.json')
@@ -22,8 +29,7 @@ html_path   = path.join('index.html')
 
 ranges_path.open('w') { |io| io << {ranges: ranges}.to_json }
 
-if lang == 'en.public'
-  lang  = 'en'
+if old
   query = `scripts/generate-bigquery.rb --old #{ranges_path} 2>&1`
 else
   query = `scripts/generate-bigquery.rb #{old} --wiki #{lang} #{ranges_path} 2>&1`
