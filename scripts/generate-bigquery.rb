@@ -3,21 +3,40 @@
 require 'json'
 require 'open-uri'
 require 'ipaddr'
+require 'optparse'
+
+lang = 'en'
+old = false
+
+OptionParser.new { |o|
+  o.on('-w', '--wiki LANG', 'The wiki langauge to use') { |l| lang = l }
+  o.on('-o', '--old', 'Use the old sample dataset (2002-2010).') { old = true }
+}.parse!(ARGV)
 
 if ARGV.size != 1
   abort "USAGE: #{$PROGRAM_NAME} ranges.json"
 end
 
+if old && lang != 'en'
+  abort "sample dataset is only for english wikipedia"
+end
+
+if old
+  table_name = "publicdata:samples.wikipedia"
+else
+  table_name = "wiki.#{lang}"
+end
+
 template = <<SQL
 SELECT
-  id as article_id,
+  #{old ? 'id' : 'page_id'},
   title,
-  CONCAT("http://en.wikipedia.org/w/index.php?diff=", STRING(revision_id)) AS diff_url,
+  CONCAT("http://#{lang}.wikipedia.org/w/index.php?diff=", STRING(revision_id)) AS diff_url,
   revision_id,
   SEC_TO_TIMESTAMP(timestamp) AS ts,
   timestamp,
   contributor_ip,
-FROM publicdata:samples.wikipedia
+FROM #{table_name}
 WHERE (
  %s
 )

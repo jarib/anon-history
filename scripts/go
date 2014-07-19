@@ -5,11 +5,12 @@ require 'json'
 require 'fileutils'
 require 'pathname'
 
-url = ARGV.shift or abort "no config url given"
+url     = ARGV.shift or abort "no config url given"
 twitter = ARGV.shift or abort "no twitter handle given"
-source = ARGV.shift or abort "no source name given"
+source  = ARGV.shift or abort "no source name given"
+lang    = ARGV.shift or abort "no wiki lang given"
 
-conf = JSON.parse(open(url).read)
+conf   = JSON.parse(open(url).read)
 ranges = conf['ranges'] || conf['accounts'].first['ranges']
 
 path = Pathname.new("../../#{twitter}/2002-2010").expand_path(__FILE__)
@@ -21,7 +22,13 @@ html_path   = path.join('index.html')
 
 ranges_path.open('w') { |io| io << {ranges: ranges}.to_json }
 
-query = `scripts/generate-bigquery.rb #{ranges_path} 2>&1`
+if lang == 'en.public'
+  lang  = 'en'
+  query = `scripts/generate-bigquery.rb --old #{ranges_path} 2>&1`
+else
+  query = `scripts/generate-bigquery.rb #{old} --wiki #{lang} #{ranges_path} 2>&1`
+end
+
 abort query unless $?.success?
 
 IO.popen("pbcopy", "w") { |io| io << query; io.close }
@@ -32,13 +39,11 @@ puts "Then press any key"
 
 STDIN.gets || abort
 
-html = `scripts/generate-html.rb --source '#{source}' --twitter '#{twitter}' #{data_path} #{ranges_path} 2>&1`
+html = `scripts/generate-html.rb --source '#{source}' --wiki #{lang} --twitter '#{twitter}' #{data_path} #{ranges_path} 2>&1`
 abort html unless $?.success?
 html_path.open('w') { |io| io << html }
 
 puts "Add to index.html: \n\n"
-
-
 
 if `which open` && $?.success?
   `open http://localhost:8080/#{twitter}/2002-2010/`
