@@ -39,7 +39,7 @@ td, th {
 }
 
 dl > dd {
-    padding-bottom: 1em;
+    padding-bottom: .3em;
 }
 
 tr:hover {
