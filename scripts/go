@@ -27,7 +27,7 @@ path.mkpath
 
 ranges_path = path.join('ranges.json')
 data_path   = path.join('data.csv')
-html_path   = path.join('index.html')
+html_path   = path.join('index-en.html')
 
 ranges_path.open('w') { |io| io << {ranges: ranges}.to_json }
 
