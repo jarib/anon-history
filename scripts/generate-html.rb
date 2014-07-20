@@ -49,7 +49,11 @@ end
 
 rows.each do |row|
   ip_int = IPAddr.new(row['contributor_ip']).to_i
-  actors = range_to_actor.select { |range, actor| range.include?(ip_int) }.map { |_, actor| actor }
+  actors = range_to_actor.select { |range, actor| range.include?(ip_int) }.map { |_, actor| actor }.compact
+
+  if actors.empty?
+    raise "no actor found for #{row.inspect}"
+  end
 
   if actors.uniq.size > 1
     raise "multiple actors (#{actors.inspect}) for #{row.inspect}"
@@ -66,7 +70,7 @@ rows.each do |row|
   actor_counts_by_year[actor][time.year] += 1
 end
 
-actors = actor_counts_by_year.keys.sort
+actors = actor_counts_by_year.keys.compact.sort
 chart_data = [["Year", *actors]]
 
 years = years.sort
