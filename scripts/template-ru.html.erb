@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <title>Анонимные правки в Википедии от <%= title_source %></title>
+
+    <link href="../../../styles.css" media="all" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+      google.load("visualization", "1", {packages:["corechart"]});
+      google.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable(<%= chart_data.to_json %>);
+
+        var options = {
+          title: 'Number of edits',
+          legend: { position: 'bottom' },
+          curveType: 'function',
+          animation: { duration: 1000, easing: 'in' },
+          chartArea: { width: '90%', height: '70%', left: '8%', top: '8%' },
+          vAxis: {
+            viewWindowMode: 'explicit',
+            viewWindow: { min: 0 }
+          }
+        };
+
+        var chart = new google.visualization.ColumnChart(document.getElementById('chart'));
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+
+  <body class="container">
+    <h2>Анонимные правки в Википедии от <%= title_source %></h2>
+
+    <p>
+      Это список всех анонимных правок на <a href="http://<%= wiki_lang %>.wikipedia.org"><%= wiki_lang %>.wikipedia.org</a>, сделанных с IP-адресов <%= title_source %> за <%= year_range %> (<a href="http://jarib.github.io/anon-history">другие источники</a>).
+      Всего было найдено <%= rows.size %> правок.
+
+      Данные из
+      <% if year_range == '2002-2014' %>
+        набора <a href="https://developers.google.com/bigquery/docs/dataset-wikipedia">википедийных</a> данных Google BigQuery.
+      <% else %>
+        <a href="http://dumps.wikimedia.org/">dumps.wikimedia.org</a>
+      <% end %>
+    </p>
+
+    <p>
+      Вы можете <a href="data.csv">скачать</a> сырые данные, с помощью которых была создана эта страница, в CSV, или посмотреть использованные для поиска правок <a href="ranges.json">диапазоны IP</a>.
+    </p>
+
+    <p>
+      Вопросы? Напишите мне на <a href="mailto:jari.bakken@gmail.com">электронную почту</a> или <a href="https://twitter.com/jarib">отправьте твит</a>.
+    </p>
+
+    <p>
+      <small>Вы можете также пожертвовать <a href="https://flattr.com/submit/auto?user_id=jarib&url=http%3A%2F%2Fjarib.github.io%2Fanon-history%2F" target="_blank"><img src="//api.flattr.com/button/flattr-badge-large.png" alt="Flattr this" title="Flattr" border="0"></a> или <script data-gittip-username="jarib" data-gittip-widget="button" src="//gttp.co/v1.js"></script> чтобы помочь мне заплатить счет за Google BigQuery.</small>
+    </p>
+
+
+    <% if twitter %>
+      <p style="text-align: center">
+        <a href="https://twitter.com/<%= twitter %>" class="twitter-follow-button" data-show-count="false" data-lang="en" data-size="large" data-dnt="true">Зафолловьте @<%= twitter %></a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+      </p>
+    <% end %>
+
+    <div id="chart"></div>
+
+    <table cellspacing=0 cellpadding=0>
+      <thead>
+        <tr>
+          <th style="width: 10%">Статья</th>
+          <th>Дата</th>
+          <th>Структура</th>
+          <th>IP</th>
+          <th style="text-align: right"></th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <% rows.each do |row|  %>
+          <tr>
+            <td><%= row['title'] %></td>
+            <td><%= row['human_date'] %></td>
+            <td><%= row['source'] %></td>
+            <td><%= row['contributor_ip'] %></td>
+            <td><a target="_blank" href="http://<%= wiki_lang %>.wikipedia.org/w/index.php?diff=<%= row['revision_id'] %>">Сравнить</a></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-26481142-7', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </body>
+</html>
