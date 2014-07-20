@@ -34,7 +34,7 @@ page_id,title,diff_url,revision_id,ts,timestamp,contributor_ip
 1145349,ויקיפדיה:דיווח על טעויות,http://he.wikipedia.org/w/index.php?diff=15541836,15541836,1.401958609E9,1401958609,147.237.70.62
 1194289,שיחה:זמר (יישוב),http://he.wikipedia.org/w/index.php?diff=15541835,15541835,1.401958605E9,1401958605,147.237.70.62
 962854,הראל לוקר,http://he.wikipedia.org/w/index.php?diff=15527055,15527055,1.401625748E9,1401625748,147.237.73.201
-1189711,ר קרן ויקימדיה העולמית,http://he.wikipedia.org/w/index.php?diff=15515865,15515865,1.401369656E9,1401369656,147.237.70.61
+1189711,"ויקיפדיה:מפגשים/מפגש עם יו""ר קרן ויקימדיה העולמית",http://he.wikipedia.org/w/index.php?diff=15515865,15515865,1.401369656E9,1401369656,147.237.70.61
 17727,דרום אפריקה,http://he.wikipedia.org/w/index.php?diff=15515435,15515435,1.401361074E9,1401361074,147.237.73.201
 14603,שיחה:טבריה,http://he.wikipedia.org/w/index.php?diff=15508203,15508203,1.401193017E9,1401193017,147.237.70.61
 14603,שיחה:טבריה,http://he.wikipedia.org/w/index.php?diff=15508202,15508202,1.40119296E9,1401192960,147.237.70.61
@@ -69,7 +69,7 @@ page_id,title,diff_url,revision_id,ts,timestamp,contributor_ip
 623003,שיחה:ליהיא לפיד,http://he.wikipedia.org/w/index.php?diff=15329344,15329344,1.397128931E9,1397128931,147.237.70.62
 1150686,שיחה:טובת הילד,http://he.wikipedia.org/w/index.php?diff=15328663,15328663,1.397117834E9,1397117834,147.237.70.108
 1150686,שיחה:טובת הילד,http://he.wikipedia.org/w/index.php?diff=15328538,15328538,1.39711574E9,1397115740,147.237.70.108
-692839,ל לנגב,http://he.wikipedia.org/w/index.php?diff=15328415,15328415,1.397112606E9,1397112606,147.237.70.61
+692839,"העתקת בסיסי צה""ל לנגב",http://he.wikipedia.org/w/index.php?diff=15328415,15328415,1.397112606E9,1397112606,147.237.70.61
 933586,עמית לנג,http://he.wikipedia.org/w/index.php?diff=15325852,15325852,1.397047023E9,1397047023,147.237.70.61
 1181924,שיחה:יואב איתמר,http://he.wikipedia.org/w/index.php?diff=15325579,15325579,1.39704285E9,1397042850,147.237.70.61
 1181924,שיחה:יואב איתמר,http://he.wikipedia.org/w/index.php?diff=15325577,15325577,1.397042764E9,1397042764,147.237.70.61
@@ -206,6 +206,7 @@ page_id,title,diff_url,revision_id,ts,timestamp,contributor_ip
 97518,ארבעה אבות נזיקין,http://he.wikipedia.org/w/index.php?diff=14870759,14870759,1.386235997E9,1386235997,147.237.70.62
 1097917,שיחה:חוק בנק ישראל,http://he.wikipedia.org/w/index.php?diff=14860140,14860140,1.385987603E9,1385987603,147.237.70.61
 213640,שירות התעסוקה,http://he.wikipedia.org/w/index.php?diff=14860126,14860126,1.385987388E9,1385987388,147.237.70.62
+887,ממשלת ישראל,http://he.wikipedia.org/w/index.php?diff=14860116,14860116,1.385987293E9,1385987293,147.237.70.62
 566457,וושינגטון נשיונאלס,http://he.wikipedia.org/w/index.php?diff=14846396,14846396,1.385641289E9,1385641289,147.237.70.62
 114247,המנדט הבריטי,http://he.wikipedia.org/w/index.php?diff=14839346,14839346,1.385470114E9,1385470114,147.237.73.201
 71419,המושבה האמריקאית בירושלים,http://he.wikipedia.org/w/index.php?diff=14839328,14839328,1.385469829E9,1385469829,147.237.73.201
@@ -215,6 +216,7 @@ page_id,title,diff_url,revision_id,ts,timestamp,contributor_ip
 410,סוריה,http://he.wikipedia.org/w/index.php?diff=14832266,14832266,1.385293024E9,1385293024,195.160.240.11
 410,סוריה,http://he.wikipedia.org/w/index.php?diff=14832260,14832260,1.385292861E9,1385292861,195.160.240.11
 22037,לי הארווי אוסוואלד,http://he.wikipedia.org/w/index.php?diff=14822855,14822855,1.385032856E9,1385032856,147.237.73.201
+22754,ג'ק רובי,http://he.wikipedia.org/w/index.php?diff=14822852,14822852,1.385032758E9,1385032758,147.237.73.201
 22037,לי הארווי אוסוואלד,http://he.wikipedia.org/w/index.php?diff=14822790,14822790,1.385030903E9,1385030903,147.237.73.201
 22853,רצח קנדי,http://he.wikipedia.org/w/index.php?diff=14822325,14822325,1.385020393E9,1385020393,147.237.73.201
 31617,העיר העתיקה,http://he.wikipedia.org/w/index.php?diff=14819891,14819891,1.3849508E9,1384950800,147.237.70.61
@@ -234,7 +236,7 @@ page_id,title,diff_url,revision_id,ts,timestamp,contributor_ip
 1136785,עובדיה יוסף,http://he.wikipedia.org/w/index.php?diff=14797989,14797989,1.384329506E9,1384329506,147.237.73.201
 823910,שיחת משתמש:Yambaram,http://he.wikipedia.org/w/index.php?diff=14792307,14792307,1.384179107E9,1384179107,147.237.70.105
 219130,ויקיפדיה:דלפק ייעוץ,http://he.wikipedia.org/w/index.php?diff=14792227,14792227,1.384177721E9,1384177721,147.237.70.61
-826963,י,http://he.wikipedia.org/w/index.php?diff=14792022,14792022,1.384173752E9,1384173752,147.237.70.62
+826963,"מט""י",http://he.wikipedia.org/w/index.php?diff=14792022,14792022,1.384173752E9,1384173752,147.237.70.62
 680940,מיכל חזון,http://he.wikipedia.org/w/index.php?diff=14779214,14779214,1.383836002E9,1383836002,147.237.70.62
 7731,בית שמש,http://he.wikipedia.org/w/index.php?diff=14772291,14772291,1.383656121E9,1383656121,147.237.70.106
 589226,השואה,http://he.wikipedia.org/w/index.php?diff=14765390,14765390,1.383465883E9,1383465883,147.237.248.2
@@ -255,8 +257,8 @@ page_id,title,diff_url,revision_id,ts,timestamp,contributor_ip
 16109,משפט בינלאומי פומבי,http://he.wikipedia.org/w/index.php?diff=14704439,14704439,1.381756962E9,1381756962,147.237.70.62
 906815,Treehouse of Horror,http://he.wikipedia.org/w/index.php?diff=14700961,14700961,1.3816618E9,1381661800,147.237.70.62
 47817,ישיבת חברון (ירושלים),http://he.wikipedia.org/w/index.php?diff=14700658,14700658,1.381652691E9,1381652691,147.237.73.201
-23541,ס,http://he.wikipedia.org/w/index.php?diff=14690916,14690916,1.381390425E9,1381390425,147.237.248.2
-23541,ס,http://he.wikipedia.org/w/index.php?diff=14690909,14690909,1.381390301E9,1381390301,147.237.248.2
+23541,"מפלגת ש""ס",http://he.wikipedia.org/w/index.php?diff=14690916,14690916,1.381390425E9,1381390425,147.237.248.2
+23541,"מפלגת ש""ס",http://he.wikipedia.org/w/index.php?diff=14690909,14690909,1.381390301E9,1381390301,147.237.248.2
 531160,חיים סידר,http://he.wikipedia.org/w/index.php?diff=14688055,14688055,1.38131413E9,1381314130,147.237.70.61
 35100,יהדות אתיופיה,http://he.wikipedia.org/w/index.php?diff=14682628,14682628,1.381146454E9,1381146454,147.237.73.201
 10618,הר הבית,http://he.wikipedia.org/w/index.php?diff=14670060,14670060,1.380810573E9,1380810573,147.237.70.61
@@ -290,18 +292,20 @@ page_id,title,diff_url,revision_id,ts,timestamp,contributor_ip
 962854,הראל לוקר,http://he.wikipedia.org/w/index.php?diff=14559240,14559240,1.37804918E9,1378049180,147.237.73.201
 962854,הראל לוקר,http://he.wikipedia.org/w/index.php?diff=14559237,14559237,1.378049155E9,1378049155,147.237.73.201
 962854,הראל לוקר,http://he.wikipedia.org/w/index.php?diff=14559230,14559230,1.378049046E9,1378049046,147.237.73.201
+338045,יהודה אריה קלוזנר,http://he.wikipedia.org/w/index.php?diff=14548551,14548551,1.377754131E9,1377754131,147.237.73.201
 270156,מבצע קינוח,http://he.wikipedia.org/w/index.php?diff=14548426,14548426,1.377747772E9,1377747772,147.237.70.61
 1063088,ועדת שיפמן,http://he.wikipedia.org/w/index.php?diff=14545604,14545604,1.377671808E9,1377671808,147.237.70.62
 1063088,ועדת שיפמן,http://he.wikipedia.org/w/index.php?diff=14545601,14545601,1.37767176E9,1377671760,147.237.70.62
 54828,בחינת בגרות,http://he.wikipedia.org/w/index.php?diff=14542755,14542755,1.377587876E9,1377587876,147.237.73.201
 415362,מנחם דונקלבלום,http://he.wikipedia.org/w/index.php?diff=14536649,14536649,1.377428681E9,1377428681,147.237.70.62
 44795,איסר הראל,http://he.wikipedia.org/w/index.php?diff=14536457,14536457,1.377423999E9,1377423999,147.237.70.107
-124499,שראלית,http://he.wikipedia.org/w/index.php?diff=14536452,14536452,1.377423926E9,1377423926,147.237.70.107
+124499,קהיליית המודיעין הישראלית,http://he.wikipedia.org/w/index.php?diff=14536452,14536452,1.377423926E9,1377423926,147.237.70.107
 11724,קרובים קרובים,http://he.wikipedia.org/w/index.php?diff=14525844,14525844,1.377156513E9,1377156513,147.237.70.62
 53190,דיפלומט,http://he.wikipedia.org/w/index.php?diff=14523205,14523205,1.377084175E9,1377084175,147.237.70.107
 758412,קרב בינת ג'בייל,http://he.wikipedia.org/w/index.php?diff=14519564,14519564,1.376995796E9,1376995796,147.237.70.61
 758412,קרב בינת ג'בייל,http://he.wikipedia.org/w/index.php?diff=14519552,14519552,1.37699563E9,1376995630,147.237.70.61
 18059,האביב של פראג,http://he.wikipedia.org/w/index.php?diff=14519220,14519220,1.376988403E9,1376988403,147.237.73.201
+1104322,שיחה:מבצע קינוח,http://he.wikipedia.org/w/index.php?diff=14514902,14514902,1.376883775E9,1376883775,147.237.70.104
 7731,בית שמש,http://he.wikipedia.org/w/index.php?diff=14511936,14511936,1.376820174E9,1376820174,147.237.70.62
 176930,הגדודים העבריים,http://he.wikipedia.org/w/index.php?diff=14501180,14501180,1.376551549E9,1376551549,147.237.73.201
 16582,אתר מורשת עולמית,http://he.wikipedia.org/w/index.php?diff=14501147,14501147,1.376550031E9,1376550031,147.237.73.201
@@ -335,7 +339,7 @@ page_id,title,diff_url,revision_id,ts,timestamp,contributor_ip
 11724,קרובים קרובים,http://he.wikipedia.org/w/index.php?diff=14390173,14390173,1.373958632E9,1373958632,147.237.70.62
 11724,קרובים קרובים,http://he.wikipedia.org/w/index.php?diff=14390169,14390169,1.373958574E9,1373958574,147.237.70.62
 888532,שאול קצנלבוגן,http://he.wikipedia.org/w/index.php?diff=14387571,14387571,1.373893195E9,1373893195,147.237.70.62
-31760,י,http://he.wikipedia.org/w/index.php?diff=14382303,14382303,1.373779985E9,1373779985,147.237.248.2
+31760,"שיחה:האר""י",http://he.wikipedia.org/w/index.php?diff=14382303,14382303,1.373779985E9,1373779985,147.237.248.2
 1045514,מחמוד המשארי,http://he.wikipedia.org/w/index.php?diff=14371764,14371764,1.37353444E9,1373534440,147.237.73.201
 210251,משרד הכלכלה,http://he.wikipedia.org/w/index.php?diff=14369749,14369749,1.373476914E9,1373476914,147.237.70.108
 550018,תוכנית Joint Strike Fighter,http://he.wikipedia.org/w/index.php?diff=14365601,14365601,1.373374521E9,1373374521,195.160.240.11
@@ -368,7 +372,7 @@ page_id,title,diff_url,revision_id,ts,timestamp,contributor_ip
 9785,גרפולוגיה,http://he.wikipedia.org/w/index.php?diff=14283962,14283962,1.371479127E9,1371479127,147.237.70.62
 9785,גרפולוגיה,http://he.wikipedia.org/w/index.php?diff=14283942,14283942,1.371478867E9,1371478867,147.237.70.62
 14818,גרפולוג,http://he.wikipedia.org/w/index.php?diff=14283765,14283765,1.371476805E9,1371476805,147.237.70.62
-530247,ה - לצמצום הפער הדיגיטלי בחברה הישראלית,http://he.wikipedia.org/w/index.php?diff=14278196,14278196,1.371375216E9,1371375216,147.237.70.62
+530247,"להב""ה - לצמצום הפער הדיגיטלי בחברה הישראלית",http://he.wikipedia.org/w/index.php?diff=14278196,14278196,1.371375216E9,1371375216,147.237.70.62
 210251,משרד הכלכלה,http://he.wikipedia.org/w/index.php?diff=14264682,14264682,1.371034165E9,1371034165,147.237.70.108
 210251,משרד הכלכלה,http://he.wikipedia.org/w/index.php?diff=14264635,14264635,1.371033142E9,1371033142,147.237.70.107
 210251,משרד הכלכלה,http://he.wikipedia.org/w/index.php?diff=14264632,14264632,1.371033013E9,1371033013,147.237.70.107
@@ -422,7 +426,7 @@ page_id,title,diff_url,revision_id,ts,timestamp,contributor_ip
 210251,משרד הכלכלה,http://he.wikipedia.org/w/index.php?diff=14187596,14187596,1.369046015E9,1369046015,147.237.70.62
 210251,משרד הכלכלה,http://he.wikipedia.org/w/index.php?diff=14187589,14187589,1.369045885E9,1369045885,147.237.70.62
 161971,קמץ,http://he.wikipedia.org/w/index.php?diff=14184357,14184357,1.368965112E9,1368965112,147.237.70.62
-28426,ץ (הליכוד),http://he.wikipedia.org/w/index.php?diff=14175043,14175043,1.368712514E9,1368712514,147.237.70.108
+28426,"ישראל כ""ץ (הליכוד)",http://he.wikipedia.org/w/index.php?diff=14175043,14175043,1.368712514E9,1368712514,147.237.70.108
 14489,ממשלת אחדות לאומית,http://he.wikipedia.org/w/index.php?diff=14173976,14173976,1.368698E9,1368698000,147.237.73.201
 98398,פסגת זאב,http://he.wikipedia.org/w/index.php?diff=14173926,14173926,1.368697149E9,1368697149,147.237.70.108
 619363,רבי יהודה הנשיא,http://he.wikipedia.org/w/index.php?diff=14133647,14133647,1.368023275E9,1368023275,147.237.73.201
@@ -433,6 +437,7 @@ page_id,title,diff_url,revision_id,ts,timestamp,contributor_ip
 109247,ברוס דיקינסון,http://he.wikipedia.org/w/index.php?diff=14099110,14099110,1.367495259E9,1367495259,195.160.240.11
 410535,לארה פביאן,http://he.wikipedia.org/w/index.php?diff=14099108,14099108,1.367495228E9,1367495228,195.160.240.11
 249529,מיינארד ג'יימס קינן,http://he.wikipedia.org/w/index.php?diff=14099106,14099106,1.367495212E9,1367495212,195.160.240.11
+452223,ליאונה לואיס,http://he.wikipedia.org/w/index.php?diff=14099100,14099100,1.367495127E9,1367495127,195.160.240.11
 123416,רוג'ר טיילור,http://he.wikipedia.org/w/index.php?diff=14099099,14099099,1.367495125E9,1367495125,195.160.240.11
 13373,פרדי מרקיורי,http://he.wikipedia.org/w/index.php?diff=14099097,14099097,1.367495122E9,1367495122,195.160.240.11
 328448,רוי אורביסון,http://he.wikipedia.org/w/index.php?diff=14099089,14099089,1.367495073E9,1367495073,195.160.240.11
@@ -528,7 +533,7 @@ page_id,title,diff_url,revision_id,ts,timestamp,contributor_ip
 550289,זולטן קלוגר,http://he.wikipedia.org/w/index.php?diff=13922426,13922426,1.363852606E9,1363852606,147.237.73.201
 550289,זולטן קלוגר,http://he.wikipedia.org/w/index.php?diff=13922422,13922422,1.363852563E9,1363852563,147.237.73.201
 1060,האוניברסיטה העברית בירושלים,http://he.wikipedia.org/w/index.php?diff=13922403,13922403,1.363852096E9,1363852096,147.237.73.201
-599641,ח,http://he.wikipedia.org/w/index.php?diff=13922398,13922398,1.363851789E9,1363851789,147.237.73.201
+599641,"מוזיאון הפלמ""ח",http://he.wikipedia.org/w/index.php?diff=13922398,13922398,1.363851789E9,1363851789,147.237.73.201
 21376,בית שערים,http://he.wikipedia.org/w/index.php?diff=13922382,13922382,1.363851353E9,1363851353,147.237.73.201
 670042,חומה ומגדל,http://he.wikipedia.org/w/index.php?diff=13922335,13922335,1.363850156E9,1363850156,147.237.73.201
 70557,חניתה,http://he.wikipedia.org/w/index.php?diff=13922328,13922328,1.363850031E9,1363850031,147.237.73.201
@@ -627,7 +632,7 @@ page_id,title,diff_url,revision_id,ts,timestamp,contributor_ip
 194642,דוח רווח והפסד,http://he.wikipedia.org/w/index.php?diff=13579145,13579145,1.358775244E9,1358775244,147.237.70.61
 194642,דוח רווח והפסד,http://he.wikipedia.org/w/index.php?diff=13579138,13579138,1.358775089E9,1358775089,147.237.70.61
 194642,דוח רווח והפסד,http://he.wikipedia.org/w/index.php?diff=13579103,13579103,1.35877453E9,1358774530,147.237.70.61
-190341,ב בישראל,http://he.wikipedia.org/w/index.php?diff=13575182,13575182,1.358685519E9,1358685519,147.237.70.106
+190341,"שיחה:זכויות להט""ב בישראל",http://he.wikipedia.org/w/index.php?diff=13575182,13575182,1.358685519E9,1358685519,147.237.70.106
 264328,מלחמת גוג ומגוג,http://he.wikipedia.org/w/index.php?diff=13559284,13559284,1.358352179E9,1358352179,147.237.70.104
 264328,מלחמת גוג ומגוג,http://he.wikipedia.org/w/index.php?diff=13559251,13559251,1.358351939E9,1358351939,147.237.70.104
 1344,קו בר-לב,http://he.wikipedia.org/w/index.php?diff=13558679,13558679,1.358344658E9,1358344658,147.237.70.62
@@ -684,7 +689,7 @@ page_id,title,diff_url,revision_id,ts,timestamp,contributor_ip
 2785,חיים הרצוג,http://he.wikipedia.org/w/index.php?diff=13349682,13349682,1.354090788E9,1354090788,147.237.73.201
 2785,חיים הרצוג,http://he.wikipedia.org/w/index.php?diff=13349671,13349671,1.354090499E9,1354090499,147.237.73.201
 36640,קווקז,http://he.wikipedia.org/w/index.php?diff=13328548,13328548,1.3536313E9,1353631300,147.237.70.62
-28426,ץ (הליכוד),http://he.wikipedia.org/w/index.php?diff=13325394,13325394,1.353571978E9,1353571978,147.237.70.62
+28426,"ישראל כ""ץ (הליכוד)",http://he.wikipedia.org/w/index.php?diff=13325394,13325394,1.353571978E9,1353571978,147.237.70.62
 355403,שיחה:ג'וליס,http://he.wikipedia.org/w/index.php?diff=13319149,13319149,1.353423589E9,1353423589,147.237.70.62
 887,ממשלת ישראל,http://he.wikipedia.org/w/index.php?diff=13317768,13317768,1.353396826E9,1353396826,147.237.73.201
 887,ממשלת ישראל,http://he.wikipedia.org/w/index.php?diff=13317765,13317765,1.353396769E9,1353396769,147.237.73.201
@@ -742,7 +747,7 @@ page_id,title,diff_url,revision_id,ts,timestamp,contributor_ip
 357,טורקיה,http://he.wikipedia.org/w/index.php?diff=13049084,13049084,1.348127218E9,1348127218,147.237.73.201
 253835,שיחה:מבצע אטלס,http://he.wikipedia.org/w/index.php?diff=13048966,13048966,1.348124807E9,1348124807,147.237.70.107
 1000107,אייל חיימובסקי,http://he.wikipedia.org/w/index.php?diff=13046810,13046810,1.348072117E9,1348072117,147.237.73.201
-107778,ל,http://he.wikipedia.org/w/index.php?diff=13045369,13045369,1.348052098E9,1348052098,195.160.240.11
+107778,"המטה הכללי של צה""ל",http://he.wikipedia.org/w/index.php?diff=13045369,13045369,1.348052098E9,1348052098,195.160.240.11
 267678,אדולף פון באייר,http://he.wikipedia.org/w/index.php?diff=13017982,13017982,1.347435827E9,1347435827,147.237.70.62
 103158,דנמרק-נורבגיה,http://he.wikipedia.org/w/index.php?diff=12977392,12977392,1.346596048E9,1346596048,147.237.70.106
 1602,האקדמיה ללשון העברית,http://he.wikipedia.org/w/index.php?diff=12950057,12950057,1.34607368E9,1346073680,147.237.73.201
@@ -915,7 +920,7 @@ page_id,title,diff_url,revision_id,ts,timestamp,contributor_ip
 143536,יובל שטייניץ,http://he.wikipedia.org/w/index.php?diff=12335200,12335200,1.335783738E9,1335783738,147.237.70.108
 106785,בנציון נתניהו,http://he.wikipedia.org/w/index.php?diff=12334789,12334789,1.335777796E9,1335777796,147.237.70.61
 273664,שיחה:שביתה כללית,http://he.wikipedia.org/w/index.php?diff=12333917,12333917,1.335758946E9,1335758946,147.237.70.105
-13447,ג בעומר,http://he.wikipedia.org/w/index.php?diff=12329528,12329528,1.335694766E9,1335694766,147.237.70.61
+13447,"שיחה:ל""ג בעומר",http://he.wikipedia.org/w/index.php?diff=12329528,12329528,1.335694766E9,1335694766,147.237.70.61
 998014,יעקב כהן (רב),http://he.wikipedia.org/w/index.php?diff=12309936,12309936,1.335337902E9,1335337902,147.237.70.106
 114262,ברברה סטרייסנד,http://he.wikipedia.org/w/index.php?diff=12305286,12305286,1.335257098E9,1335257098,147.237.70.107
 62239,עילם,http://he.wikipedia.org/w/index.php?diff=12301888,12301888,1.335186994E9,1335186994,147.237.70.61
@@ -1116,8 +1121,8 @@ page_id,title,diff_url,revision_id,ts,timestamp,contributor_ip
 176435,יחסי החוץ של ישראל,http://he.wikipedia.org/w/index.php?diff=11236600,11236600,1.316432401E9,1316432401,147.237.73.201
 176435,יחסי החוץ של ישראל,http://he.wikipedia.org/w/index.php?diff=11236598,11236598,1.316432365E9,1316432365,147.237.73.201
 176435,יחסי החוץ של ישראל,http://he.wikipedia.org/w/index.php?diff=11236570,11236570,1.316432101E9,1316432101,147.237.73.201
-107778,ל,http://he.wikipedia.org/w/index.php?diff=11217870,11217870,1.316099028E9,1316099028,195.160.240.11
-107778,ל,http://he.wikipedia.org/w/index.php?diff=11217863,11217863,1.316098961E9,1316098961,195.160.240.11
+107778,"המטה הכללי של צה""ל",http://he.wikipedia.org/w/index.php?diff=11217870,11217870,1.316099028E9,1316099028,195.160.240.11
+107778,"המטה הכללי של צה""ל",http://he.wikipedia.org/w/index.php?diff=11217863,11217863,1.316098961E9,1316098961,195.160.240.11
 205696,הסניגוריה הציבורית,http://he.wikipedia.org/w/index.php?diff=11199290,11199290,1.315745005E9,1315745005,147.237.70.61
 205696,הסניגוריה הציבורית,http://he.wikipedia.org/w/index.php?diff=11199231,11199231,1.315744308E9,1315744308,147.237.70.61
 205696,הסניגוריה הציבורית,http://he.wikipedia.org/w/index.php?diff=11199205,11199205,1.315744049E9,1315744049,147.237.70.104
@@ -1210,7 +1215,7 @@ page_id,title,diff_url,revision_id,ts,timestamp,contributor_ip
 10459,גבע בנימין,http://he.wikipedia.org/w/index.php?diff=10714203,10714203,1.308637534E9,1308637534,147.237.248.2
 504479,דרור פיילר,http://he.wikipedia.org/w/index.php?diff=10693947,10693947,1.308306252E9,1308306252,195.160.240.11
 16762,ידיעות אחרונות,http://he.wikipedia.org/w/index.php?diff=10688982,10688982,1.308228167E9,1308228167,147.237.70.61
-748,ך,http://he.wikipedia.org/w/index.php?diff=10688974,10688974,1.308228043E9,1308228043,147.237.70.61
+748,"תנ""ך",http://he.wikipedia.org/w/index.php?diff=10688974,10688974,1.308228043E9,1308228043,147.237.70.61
 48760,ארגוני זכויות האדם,http://he.wikipedia.org/w/index.php?diff=10678549,10678549,1.308044874E9,1308044874,147.237.70.106
 210251,משרד הכלכלה,http://he.wikipedia.org/w/index.php?diff=10678183,10678183,1.308037162E9,1308037162,147.237.70.105
 150711,איוב קרא,http://he.wikipedia.org/w/index.php?diff=10653857,10653857,1.307619856E9,1307619856,147.237.73.201
@@ -1223,7 +1228,7 @@ page_id,title,diff_url,revision_id,ts,timestamp,contributor_ip
 33350,טשקנט,http://he.wikipedia.org/w/index.php?diff=10599786,10599786,1.306745487E9,1306745487,192.115.177.220
 33350,טשקנט,http://he.wikipedia.org/w/index.php?diff=10599781,10599781,1.306745461E9,1306745461,192.115.177.220
 349604,ויקיפדיה:זכויות יוצרים/שאלות ותשובות,http://he.wikipedia.org/w/index.php?diff=10594278,10594278,1.306665772E9,1306665772,147.237.70.108
-23297,ל,http://he.wikipedia.org/w/index.php?diff=10593976,10593976,1.306660456E9,1306660456,195.160.240.11
+23297,"שיחה:סיירת מטכ""ל",http://he.wikipedia.org/w/index.php?diff=10593976,10593976,1.306660456E9,1306660456,195.160.240.11
 898533,בינגו,http://he.wikipedia.org/w/index.php?diff=10593396,10593396,1.306649399E9,1306649399,147.237.70.106
 121845,שמואל אוסוואלד רופאייזן,http://he.wikipedia.org/w/index.php?diff=10567032,10567032,1.30622477E9,1306224770,147.237.70.108
 33332,הסזון,http://he.wikipedia.org/w/index.php?diff=10561759,10561759,1.306138438E9,1306138438,147.237.70.104
@@ -1371,6 +1376,7 @@ page_id,title,diff_url,revision_id,ts,timestamp,contributor_ip
 543962,משה קופינס,http://he.wikipedia.org/w/index.php?diff=9725165,9725165,1.291547629E9,1291547629,147.237.70.103
 442031,בני סלע,http://he.wikipedia.org/w/index.php?diff=9708548,9708548,1.291286095E9,1291286095,195.160.240.11
 393696,מבחן נהיגה עיוני,http://he.wikipedia.org/w/index.php?diff=9708390,9708390,1.291283258E9,1291283258,147.237.70.107
+393696,מבחן נהיגה עיוני,http://he.wikipedia.org/w/index.php?diff=9708362,9708362,1.291282846E9,1291282846,147.237.70.107
 442031,בני סלע,http://he.wikipedia.org/w/index.php?diff=9704670,9704670,1.291209158E9,1291209158,195.160.240.11
 34592,שלמה עמאר,http://he.wikipedia.org/w/index.php?diff=9704629,9704629,1.291208637E9,1291208637,147.237.70.104
 23432,אימוץ,http://he.wikipedia.org/w/index.php?diff=9703882,9703882,1.291198193E9,1291198193,147.237.70.108
@@ -1439,6 +1445,7 @@ page_id,title,diff_url,revision_id,ts,timestamp,contributor_ip
 376116,מדד מחירי דירות בבעלות הדיירים,http://he.wikipedia.org/w/index.php?diff=9308792,9308792,1.284532033E9,1284532033,147.237.248.2
 809539,מודל הדוני,http://he.wikipedia.org/w/index.php?diff=9308708,9308708,1.284530269E9,1284530269,147.237.248.2
 376116,מדד מחירי דירות בבעלות הדיירים,http://he.wikipedia.org/w/index.php?diff=9308686,9308686,1.284529673E9,1284529673,147.237.248.2
+376116,מדד מחירי דירות בבעלות הדיירים,http://he.wikipedia.org/w/index.php?diff=9308684,9308684,1.284529623E9,1284529623,147.237.248.2
 376116,מדד מחירי דירות בבעלות הדיירים,http://he.wikipedia.org/w/index.php?diff=9308677,9308677,1.284529468E9,1284529468,147.237.248.2
 376116,מדד מחירי דירות בבעלות הדיירים,http://he.wikipedia.org/w/index.php?diff=9308663,9308663,1.284529176E9,1284529176,147.237.248.2
 3311,חנוך לוין,http://he.wikipedia.org/w/index.php?diff=9305449,9305449,1.284477376E9,1284477376,147.237.73.201
@@ -1648,8 +1655,8 @@ page_id,title,diff_url,revision_id,ts,timestamp,contributor_ip
 753013,שיחה:ג'ורג' גרבנר,http://he.wikipedia.org/w/index.php?diff=8292996,8292996,1.266414442E9,1266414442,147.237.70.107
 232043,ג'ורג' גרבנר,http://he.wikipedia.org/w/index.php?diff=8292984,8292984,1.26641434E9,1266414340,147.237.70.107
 608330,מנגשה יוהנס,http://he.wikipedia.org/w/index.php?diff=8283601,8283601,1.266246476E9,1266246476,147.237.70.108
-48529,א,http://he.wikipedia.org/w/index.php?diff=8262396,8262396,1.265879829E9,1265879829,147.237.70.106
-48529,א,http://he.wikipedia.org/w/index.php?diff=8262368,8262368,1.265879236E9,1265879236,147.237.70.106
+48529,"זק""א",http://he.wikipedia.org/w/index.php?diff=8262396,8262396,1.265879829E9,1265879829,147.237.70.106
+48529,"זק""א",http://he.wikipedia.org/w/index.php?diff=8262368,8262368,1.265879236E9,1265879236,147.237.70.106
 133243,מסיבת גן,http://he.wikipedia.org/w/index.php?diff=8252967,8252967,1.265702415E9,1265702415,147.237.70.107
 423504,ארמית חדשה צפון-מזרחית,http://he.wikipedia.org/w/index.php?diff=8250105,8250105,1.265643431E9,1265643431,147.237.70.108
 2900,רחוב סומסום,http://he.wikipedia.org/w/index.php?diff=8243918,8243918,1.265545279E9,1265545279,147.237.70.108
@@ -1690,7 +1697,7 @@ page_id,title,diff_url,revision_id,ts,timestamp,contributor_ip
 22102,שיחה:כתיב חסר ניקוד,http://he.wikipedia.org/w/index.php?diff=8091155,8091155,1.262763759E9,1262763759,195.160.240.11
 1909,ברית הנוער הקומוניסטי הישראלי,http://he.wikipedia.org/w/index.php?diff=8087800,8087800,1.262694162E9,1262694162,147.237.70.108
 70,אייזק ניוטון,http://he.wikipedia.org/w/index.php?diff=8083186,8083186,1.262601834E9,1262601834,147.237.70.107
-48529,א,http://he.wikipedia.org/w/index.php?diff=8079253,8079253,1.262506818E9,1262506818,147.237.70.106
+48529,"זק""א",http://he.wikipedia.org/w/index.php?diff=8079253,8079253,1.262506818E9,1262506818,147.237.70.106
 156284,קוקסינל,http://he.wikipedia.org/w/index.php?diff=8067890,8067890,1.262265677E9,1262265677,147.237.70.104
 142893,זאב בוים,http://he.wikipedia.org/w/index.php?diff=8057826,8057826,1.26207436E9,1262074360,147.237.70.106
 2899,זהו זה!,http://he.wikipedia.org/w/index.php?diff=8030915,8030915,1.261655567E9,1261655567,147.237.70.107
@@ -1712,7 +1719,7 @@ page_id,title,diff_url,revision_id,ts,timestamp,contributor_ip
 205523,דור צויגנבום,http://he.wikipedia.org/w/index.php?diff=7997274,7997274,1.261046533E9,1261046533,147.237.70.107
 2899,זהו זה!,http://he.wikipedia.org/w/index.php?diff=7997212,7997212,1.261046003E9,1261046003,147.237.70.107
 722704,אורן זריף,http://he.wikipedia.org/w/index.php?diff=7992971,7992971,1.260956261E9,1260956261,147.237.70.107
-48529,א,http://he.wikipedia.org/w/index.php?diff=7989276,7989276,1.260876782E9,1260876782,147.237.70.106
+48529,"זק""א",http://he.wikipedia.org/w/index.php?diff=7989276,7989276,1.260876782E9,1260876782,147.237.70.106
 26973,אליעזר לודוויג זמנהוף,http://he.wikipedia.org/w/index.php?diff=7988190,7988190,1.260861155E9,1260861155,147.237.70.107
 231513,תיירות בישראל,http://he.wikipedia.org/w/index.php?diff=7979712,7979712,1.2607046E9,1260704600,147.237.70.107
 189881,זאב וילנאי,http://he.wikipedia.org/w/index.php?diff=7964101,7964101,1.260363953E9,1260363953,147.237.70.108
@@ -1813,8 +1820,8 @@ page_id,title,diff_url,revision_id,ts,timestamp,contributor_ip
 1302,מלחמת ששת הימים,http://he.wikipedia.org/w/index.php?diff=7458854,7458854,1.25136633E9,1251366330,147.237.73.201
 1302,מלחמת ששת הימים,http://he.wikipedia.org/w/index.php?diff=7458840,7458840,1.251366082E9,1251366082,147.237.73.201
 617664,מיתון 1966 בישראל,http://he.wikipedia.org/w/index.php?diff=7458789,7458789,1.251365324E9,1251365324,147.237.73.201
-38758,מושב מפלט,http://he.wikipedia.org/w/index.php?diff=7458783,7458783,1.251365281E9,1251365281,147.237.70.107
 617664,מיתון 1966 בישראל,http://he.wikipedia.org/w/index.php?diff=7458784,7458784,1.251365281E9,1251365281,147.237.73.201
+38758,מושב מפלט,http://he.wikipedia.org/w/index.php?diff=7458783,7458783,1.251365281E9,1251365281,147.237.70.107
 38758,מושב מפלט,http://he.wikipedia.org/w/index.php?diff=7458737,7458737,1.251364487E9,1251364487,147.237.70.107
 293698,יעקב הרצוג,http://he.wikipedia.org/w/index.php?diff=7458306,7458306,1.251355027E9,1251355027,147.237.73.201
 99769,תקוע,http://he.wikipedia.org/w/index.php?diff=7455127,7455127,1.251290931E9,1251290931,147.237.70.107
@@ -1853,16 +1860,17 @@ page_id,title,diff_url,revision_id,ts,timestamp,contributor_ip
 513,משה שרת,http://he.wikipedia.org/w/index.php?diff=7343563,7343563,1.24929285E9,1249292850,147.237.73.201
 15930,זלמן שזר,http://he.wikipedia.org/w/index.php?diff=7343541,7343541,1.249292509E9,1249292509,147.237.73.201
 2759,יצחק בן-צבי,http://he.wikipedia.org/w/index.php?diff=7343527,7343527,1.249292351E9,1249292351,147.237.73.201
-553530," ורשבסקי",http://he.wikipedia.org/w/index.php?diff=7343166,7343166,1.249286509E9,1249286509,147.237.70.106
+553530,אדלר חומסקי & ורשבסקי,http://he.wikipedia.org/w/index.php?diff=7343166,7343166,1.249286509E9,1249286509,147.237.70.106
 2757,חיים ויצמן,http://he.wikipedia.org/w/index.php?diff=7343053,7343053,1.24928442E9,1249284420,147.237.73.201
+2825,הערוץ הראשון,http://he.wikipedia.org/w/index.php?diff=7339499,7339499,1.249215126E9,1249215126,147.237.70.106
 1765,יוון,http://he.wikipedia.org/w/index.php?diff=7339423,7339423,1.249213574E9,1249213574,147.237.73.201
 1765,יוון,http://he.wikipedia.org/w/index.php?diff=7338753,7338753,1.249207752E9,1249207752,147.237.73.201
 1765,יוון,http://he.wikipedia.org/w/index.php?diff=7338689,7338689,1.249207317E9,1249207317,147.237.73.201
 1765,יוון,http://he.wikipedia.org/w/index.php?diff=7338681,7338681,1.249207271E9,1249207271,147.237.73.201
 514,לוי אשכול,http://he.wikipedia.org/w/index.php?diff=7338125,7338125,1.249201844E9,1249201844,147.237.73.201
 514,לוי אשכול,http://he.wikipedia.org/w/index.php?diff=7338122,7338122,1.249201766E9,1249201766,147.237.73.201
-680419,ל מסיני ומעזה (1956–1957),http://he.wikipedia.org/w/index.php?diff=7338114,7338114,1.249201502E9,1249201502,147.237.73.201
-680419,ל מסיני ומעזה (1956–1957),http://he.wikipedia.org/w/index.php?diff=7338099,7338099,1.249201213E9,1249201213,147.237.73.201
+680419,"נסיגת צה""ל מסיני ומעזה (1956–1957)",http://he.wikipedia.org/w/index.php?diff=7338114,7338114,1.249201502E9,1249201502,147.237.73.201
+680419,"נסיגת צה""ל מסיני ומעזה (1956–1957)",http://he.wikipedia.org/w/index.php?diff=7338099,7338099,1.249201213E9,1249201213,147.237.73.201
 639814,חשבון פשוט,http://he.wikipedia.org/w/index.php?diff=7337780,7337780,1.249192591E9,1249192591,147.237.70.106
 2899,זהו זה!,http://he.wikipedia.org/w/index.php?diff=7337711,7337711,1.249191076E9,1249191076,147.237.70.106
 2899,זהו זה!,http://he.wikipedia.org/w/index.php?diff=7337702,7337702,1.249190936E9,1249190936,147.237.70.106
@@ -1876,7 +1884,7 @@ page_id,title,diff_url,revision_id,ts,timestamp,contributor_ip
 3025,מלחמת סיני,http://he.wikipedia.org/w/index.php?diff=7317685,7317685,1.248856267E9,1248856267,147.237.73.201
 434165,קופיקו (סדרת טלוויזיה),http://he.wikipedia.org/w/index.php?diff=7317437,7317437,1.248852737E9,1248852737,147.237.70.106
 434165,קופיקו (סדרת טלוויזיה),http://he.wikipedia.org/w/index.php?diff=7317412,7317412,1.24885235E9,1248852350,147.237.70.106
-553530," ורשבסקי",http://he.wikipedia.org/w/index.php?diff=7313017,7313017,1.248780792E9,1248780792,147.237.70.106
+553530,אדלר חומסקי & ורשבסקי,http://he.wikipedia.org/w/index.php?diff=7313017,7313017,1.248780792E9,1248780792,147.237.70.106
 15930,זלמן שזר,http://he.wikipedia.org/w/index.php?diff=7312597,7312597,1.248774309E9,1248774309,147.237.73.201
 15930,זלמן שזר,http://he.wikipedia.org/w/index.php?diff=7312383,7312383,1.248770375E9,1248770375,147.237.73.201
 513,משה שרת,http://he.wikipedia.org/w/index.php?diff=7312375,7312375,1.248770274E9,1248770274,147.237.73.201
@@ -1962,8 +1970,8 @@ page_id,title,diff_url,revision_id,ts,timestamp,contributor_ip
 11553,שמש (סדרת טלוויזיה),http://he.wikipedia.org/w/index.php?diff=7034765,7034765,1.243846366E9,1243846366,147.237.70.108
 148061,תוכנית בניין עיר,http://he.wikipedia.org/w/index.php?diff=7031714,7031714,1.243783746E9,1243783746,147.237.70.106
 11096,דודו טופז,http://he.wikipedia.org/w/index.php?diff=7030032,7030032,1.243759231E9,1243759231,147.237.70.108
-203067,ל,http://he.wikipedia.org/w/index.php?diff=7012051,7012051,1.24341592E9,1243415920,147.237.70.107
-203067,ל,http://he.wikipedia.org/w/index.php?diff=7012038,7012038,1.243415703E9,1243415703,147.237.70.107
+203067,"כיכר צה""ל",http://he.wikipedia.org/w/index.php?diff=7012051,7012051,1.24341592E9,1243415920,147.237.70.107
+203067,"כיכר צה""ל",http://he.wikipedia.org/w/index.php?diff=7012038,7012038,1.243415703E9,1243415703,147.237.70.107
 1820,חתול הבית,http://he.wikipedia.org/w/index.php?diff=6975228,6975228,1.242745795E9,1242745795,147.237.70.108
 47817,ישיבת חברון (ירושלים),http://he.wikipedia.org/w/index.php?diff=6946479,6946479,1.242314286E9,1242314286,147.237.70.104
 268310,הר הקפיצה,http://he.wikipedia.org/w/index.php?diff=6945059,6945059,1.242292969E9,1242292969,147.237.70.105
@@ -2109,10 +2117,10 @@ page_id,title,diff_url,revision_id,ts,timestamp,contributor_ip
 164268,תכנון ובנייה בישראל,http://he.wikipedia.org/w/index.php?diff=6550153,6550153,1.235483633E9,1235483633,147.237.70.104
 10657,תכנון (הנדסה וכלכלה),http://he.wikipedia.org/w/index.php?diff=6550142,6550142,1.235483528E9,1235483528,147.237.70.104
 125117,תכנון עירוני,http://he.wikipedia.org/w/index.php?diff=6550052,6550052,1.235481854E9,1235481854,147.237.70.108
-182840,א 38,http://he.wikipedia.org/w/index.php?diff=6549986,6549986,1.235480884E9,1235480884,147.237.70.108
-182840,א 38,http://he.wikipedia.org/w/index.php?diff=6549981,6549981,1.235480792E9,1235480792,147.237.70.108
-182840,א 38,http://he.wikipedia.org/w/index.php?diff=6549977,6549977,1.235480682E9,1235480682,147.237.70.108
-182840,א 38,http://he.wikipedia.org/w/index.php?diff=6549972,6549972,1.235480578E9,1235480578,147.237.70.108
+182840,"תמ""א 38",http://he.wikipedia.org/w/index.php?diff=6549986,6549986,1.235480884E9,1235480884,147.237.70.108
+182840,"תמ""א 38",http://he.wikipedia.org/w/index.php?diff=6549981,6549981,1.235480792E9,1235480792,147.237.70.108
+182840,"תמ""א 38",http://he.wikipedia.org/w/index.php?diff=6549977,6549977,1.235480682E9,1235480682,147.237.70.108
+182840,"תמ""א 38",http://he.wikipedia.org/w/index.php?diff=6549972,6549972,1.235480578E9,1235480578,147.237.70.108
 16833,המועצה הארצית לתכנון ולבנייה,http://he.wikipedia.org/w/index.php?diff=6549710,6549710,1.235476927E9,1235476927,147.237.70.103
 16833,המועצה הארצית לתכנון ולבנייה,http://he.wikipedia.org/w/index.php?diff=6549693,6549693,1.235476683E9,1235476683,147.237.70.103
 16833,המועצה הארצית לתכנון ולבנייה,http://he.wikipedia.org/w/index.php?diff=6549675,6549675,1.235476374E9,1235476374,147.237.70.103
@@ -2180,6 +2188,7 @@ page_id,title,diff_url,revision_id,ts,timestamp,contributor_ip
 393045,האדונית והרוכל,http://he.wikipedia.org/w/index.php?diff=6316571,6316571,1.231158485E9,1231158485,147.237.70.105
 2898,ערוץ 2,http://he.wikipedia.org/w/index.php?diff=6315759,6315759,1.231138622E9,1231138622,147.237.70.105
 25549,הקומדי סטור,http://he.wikipedia.org/w/index.php?diff=6312303,6312303,1.231077746E9,1231077746,147.237.70.105
+25549,הקומדי סטור,http://he.wikipedia.org/w/index.php?diff=6312297,6312297,1.23107766E9,1231077660,147.237.70.105
 77919,אביהו בן-נון,http://he.wikipedia.org/w/index.php?diff=6311613,6311613,1.231062709E9,1231062709,147.237.70.106
 25549,הקומדי סטור,http://he.wikipedia.org/w/index.php?diff=6311164,6311164,1.23105018E9,1231050180,147.237.70.106
 177771,שיחה:מרגלית צנעני,http://he.wikipedia.org/w/index.php?diff=6292041,6292041,1.230650983E9,1230650983,147.237.70.103
@@ -2256,7 +2265,7 @@ page_id,title,diff_url,revision_id,ts,timestamp,contributor_ip
 443237,שנת גכה,http://he.wikipedia.org/w/index.php?diff=6089248,6089248,1.226841834E9,1226841834,147.237.70.103
 444770,שנת בשז,http://he.wikipedia.org/w/index.php?diff=6089235,6089235,1.226841632E9,1226841632,147.237.70.103
 659418,אהוד אולמרט,http://he.wikipedia.org/w/index.php?diff=6057784,6057784,1.226247788E9,1226247788,147.237.73.201
-36209,ט אבות מלאכה,http://he.wikipedia.org/w/index.php?diff=6025441,6025441,1.225717025E9,1225717025,147.237.70.105
+36209,"ל""ט אבות מלאכה",http://he.wikipedia.org/w/index.php?diff=6025441,6025441,1.225717025E9,1225717025,147.237.70.105
 282469,בן כספית,http://he.wikipedia.org/w/index.php?diff=6024952,6024952,1.22570712E9,1225707120,147.237.70.103
 329107,עפר שלח,http://he.wikipedia.org/w/index.php?diff=6007341,6007341,1.225369831E9,1225369831,147.237.70.103
 11637,שעון קיץ,http://he.wikipedia.org/w/index.php?diff=5998310,5998310,1.225196196E9,1225196196,147.237.70.105
@@ -2430,7 +2439,7 @@ page_id,title,diff_url,revision_id,ts,timestamp,contributor_ip
 217372,שיחה:מלחמת לבנון השנייה,http://he.wikipedia.org/w/index.php?diff=4459238,4459238,1.200810737E9,1200810737,195.160.240.11
 1494,כדורגל בישראל,http://he.wikipedia.org/w/index.php?diff=4442300,4442300,1.200552619E9,1200552619,195.160.240.11
 383589,אקו 99 FM,http://he.wikipedia.org/w/index.php?diff=4442279,4442279,1.20055227E9,1200552270,195.160.240.11
-51516,ר ירושלים,http://he.wikipedia.org/w/index.php?diff=4438200,4438200,1.200481898E9,1200481898,195.160.240.11
+51516,"שיחה:בית""ר ירושלים",http://he.wikipedia.org/w/index.php?diff=4438200,4438200,1.200481898E9,1200481898,195.160.240.11
 30587,ישראל ביתנו,http://he.wikipedia.org/w/index.php?diff=4437927,4437927,1.20047579E9,1200475790,195.160.240.11
 438573,בסוד העניינים,http://he.wikipedia.org/w/index.php?diff=4408335,4408335,1.199967282E9,1199967282,147.237.70.105
 438573,בסוד העניינים,http://he.wikipedia.org/w/index.php?diff=4408327,4408327,1.199967007E9,1199967007,147.237.70.105
@@ -2441,8 +2450,8 @@ page_id,title,diff_url,revision_id,ts,timestamp,contributor_ip
 8528,ויקיפדיה:בקשת ערך,http://he.wikipedia.org/w/index.php?diff=4346020,4346020,1.19876995E9,1198769950,147.237.70.104
 33823,חיים כץ,http://he.wikipedia.org/w/index.php?diff=4345828,4345828,1.198767476E9,1198767476,147.237.70.104
 94778,תרדמת חורף,http://he.wikipedia.org/w/index.php?diff=4345397,4345397,1.198758773E9,1198758773,147.237.70.105
-149921,י,http://he.wikipedia.org/w/index.php?diff=4344391,4344391,1.198732353E9,1198732353,195.160.240.11
-149921,י,http://he.wikipedia.org/w/index.php?diff=4344389,4344389,1.198732316E9,1198732316,195.160.240.11
+149921,"פרס עמ""י",http://he.wikipedia.org/w/index.php?diff=4344391,4344391,1.198732353E9,1198732353,195.160.240.11
+149921,"פרס עמ""י",http://he.wikipedia.org/w/index.php?diff=4344389,4344389,1.198732316E9,1198732316,195.160.240.11
 18557,סילבן שלום,http://he.wikipedia.org/w/index.php?diff=4341027,4341027,1.198680916E9,1198680916,147.237.70.104
 18557,סילבן שלום,http://he.wikipedia.org/w/index.php?diff=4340517,4340517,1.19867556E9,1198675560,147.237.70.104
 442598,שנת השא,http://he.wikipedia.org/w/index.php?diff=4339401,4339401,1.19865412E9,1198654120,147.237.70.105
@@ -2514,7 +2523,7 @@ page_id,title,diff_url,revision_id,ts,timestamp,contributor_ip
 20960,דליה איציק,http://he.wikipedia.org/w/index.php?diff=3812939,3812939,1.190018181E9,1190018181,147.237.70.104
 12369,אסלאם שיעי,http://he.wikipedia.org/w/index.php?diff=3786539,3786539,1.189515455E9,1189515455,147.237.70.104
 98398,פסגת זאב,http://he.wikipedia.org/w/index.php?diff=3745735,3745735,1.188795537E9,1188795537,147.237.70.104
-202426,ן,http://he.wikipedia.org/w/index.php?diff=3711856,3711856,1.188130447E9,1188130447,147.237.70.13
+202426,"מפת""ן",http://he.wikipedia.org/w/index.php?diff=3711856,3711856,1.188130447E9,1188130447,147.237.70.13
 7456,סדרה,http://he.wikipedia.org/w/index.php?diff=3710452,3710452,1.188109705E9,1188109705,147.237.248.2
 8140,מרחב וקטורי,http://he.wikipedia.org/w/index.php?diff=3710447,3710447,1.188109576E9,1188109576,147.237.248.2
 9152,אינטגרל,http://he.wikipedia.org/w/index.php?diff=3710432,3710432,1.188109265E9,1188109265,147.237.248.2
@@ -2641,7 +2650,7 @@ page_id,title,diff_url,revision_id,ts,timestamp,contributor_ip
 31044,מיכאל מלכיאור,http://he.wikipedia.org/w/index.php?diff=2387358,2387358,1.167216506E9,1167216506,147.237.70.212
 2394,22 בינואר,http://he.wikipedia.org/w/index.php?diff=2382786,2382786,1.167118907E9,1167118907,147.237.70.103
 298535,נינט טייב,http://he.wikipedia.org/w/index.php?diff=2358821,2358821,1.16670602E9,1166706020,147.237.70.212
-154452,ל,http://he.wikipedia.org/w/index.php?diff=2358403,2358403,1.166700189E9,1166700189,195.160.240.11
+154452,"היועץ הכספי לרמטכ""ל",http://he.wikipedia.org/w/index.php?diff=2358403,2358403,1.166700189E9,1166700189,195.160.240.11
 34328,יוסף,http://he.wikipedia.org/w/index.php?diff=2357691,2357691,1.166689765E9,1166689765,147.237.248.2
 281738,תם חובב,http://he.wikipedia.org/w/index.php?diff=2314197,2314197,1.165990812E9,1165990812,147.237.70.212
 7390,פוקר,http://he.wikipedia.org/w/index.php?diff=2303153,2303153,1.165833506E9,1165833506,195.160.240.11
@@ -2795,7 +2804,7 @@ page_id,title,diff_url,revision_id,ts,timestamp,contributor_ip
 67135,"הטוב, הרע והמכוער",http://he.wikipedia.org/w/index.php?diff=744257,744257,1.130415634E9,1130415634,147.237.70.103
 85120,שמואל אבידור הכהן,http://he.wikipedia.org/w/index.php?diff=704856,704856,1.128854531E9,1128854531,147.237.70.11
 78088,אלימלך מליז'נסק,http://he.wikipedia.org/w/index.php?diff=704778,704778,1.128851154E9,1128851154,147.237.70.103
-23541,ס,http://he.wikipedia.org/w/index.php?diff=678497,678497,1.127822113E9,1127822113,147.237.70.101
+23541,"מפלגת ש""ס",http://he.wikipedia.org/w/index.php?diff=678497,678497,1.127822113E9,1127822113,147.237.70.101
 59072,אירועי אוקטובר 2000,http://he.wikipedia.org/w/index.php?diff=678065,678065,1.127801059E9,1127801059,147.237.70.11
 59072,אירועי אוקטובר 2000,http://he.wikipedia.org/w/index.php?diff=678062,678062,1.127800795E9,1127800795,147.237.70.11
 59072,אירועי אוקטובר 2000,http://he.wikipedia.org/w/index.php?diff=678061,678061,1.127800708E9,1127800708,147.237.70.11
@@ -2886,4 +2895,3 @@ page_id,title,diff_url,revision_id,ts,timestamp,contributor_ip
 2173,שיחה:מבצע ברברוסה,http://he.wikipedia.org/w/index.php?diff=11699,11699,1.068376802E9,1068376802,147.237.70.13
 619,יהודה הלוי,http://he.wikipedia.org/w/index.php?diff=26378,26378,1.06121202E9,1061212020,147.237.70.11
 619,יהודה הלוי,http://he.wikipedia.org/w/index.php?diff=2517,2517,1.061211777E9,1061211777,147.237.70.13
-376116,מדד מחירי דירות בבעלות הדיירים,http://he.wikipedia.org/w/index.php?diff=9308684,9308684,9.834048E8,983404800,147.237.248.2

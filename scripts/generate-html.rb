@@ -7,15 +7,17 @@ require 'optparse'
 require 'ipaddr'
 require 'set'
 
-title_source = '...unknown...'
-wiki_lang    = 'en'
-twitter      = nil
-page         = 0
-year_range   = '2002-2010'
+title_source  = '...unknown...'
+wiki_lang     = 'en'
+twitter       = nil
+page          = 0
+year_range    = '2002-2010'
+template_path = File.expand_path('../template.html.erb', __FILE__)
 
 OptionParser.new do |opts|
   opts.on('-s', '--source SOURCE_NAME') { |s| title_source = s }
   opts.on('-t', '--twitter USERNAME') { |t| twitter = t }
+  opts.on('-e', '--erb TEMPLATE_PATH') { |t| template_path = t }
   opts.on('-w', '--wiki WIKI_LANG') { |w| wiki_lang = w }
   opts.on('-h', '--help') { puts opts; exit 1 }
 end.parse!(ARGV)
@@ -78,6 +80,6 @@ end
 rows = rows.sort_by { |e| -e['timestamp'].to_i }
 year_range = "#{rows.last['time'].year}-#{rows.first['time'].year}"
 
-template = File.read(File.expand_path('../template.html.erb', __FILE__))
+template = File.read(template_path)
 puts ERB.new(template, 0, "%-<>").result(binding)
 

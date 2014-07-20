@@ -13,7 +13,8 @@ lang    = ARGV.shift or abort "no wiki lang given"
 conf   = JSON.parse(open(url).read)
 ranges = conf['ranges'] || conf['accounts'].first['ranges']
 
-if lang == 'en.public'
+case lang
+when 'en.public'
   lang = 'en'
   old  = true
 else
@@ -46,6 +47,7 @@ puts "Then press any key"
 
 STDIN.gets || abort
 
+#html = `scripts/generate-html.rb --erb scripts/template-ru.html.erb --source '#{source}' --wiki #{lang} --twitter '#{twitter}' #{data_path} #{ranges_path} 2>&1`
 html = `scripts/generate-html.rb --source '#{source}' --wiki #{lang} --twitter '#{twitter}' #{data_path} #{ranges_path} 2>&1`
 abort html unless $?.success?
 html_path.open('w') { |io| io << html }
