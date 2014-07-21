@@ -11,7 +11,7 @@ source  = ARGV.shift or abort "no source name given"
 lang    = ARGV.shift or abort "no wiki lang given"
 
 conf   = JSON.parse(open(url).read)
-ranges = conf['ranges'] || conf['accounts'].first['ranges']
+ranges = conf['ranges'] || conf['accounts'].last['ranges']
 
 case lang
 when 'en.public'

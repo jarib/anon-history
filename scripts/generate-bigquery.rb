@@ -33,14 +33,13 @@ SELECT
   title,
   CONCAT("http://#{lang}.wikipedia.org/w/index.php?diff=", STRING(revision_id)) AS diff_url,
   revision_id,
-  SEC_TO_TIMESTAMP(timestamp) AS ts,
   timestamp,
   contributor_ip,
 FROM #{table_name}
 WHERE (
  %s
 )
-ORDER BY ts DESC
+ORDER BY timestamp DESC
 SQL
 
 conditions = []
