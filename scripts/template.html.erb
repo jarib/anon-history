@@ -59,7 +59,6 @@
       <small>You can also donate through <a href="https://flattr.com/submit/auto?user_id=jarib&url=http%3A%2F%2Fjarib.github.io%2Fanon-history%2F" target="_blank"><img src="//api.flattr.com/button/flattr-badge-large.png" alt="Flattr this" title="Flattr" border="0"></a> or <script data-gittip-username="jarib" data-gittip-widget="button" src="//gttp.co/v1.js"></script> to help me pay my Google BigQuery bill.</small>
     </p>
 
-
     <% if twitter %>
       <p style="text-align: center">
         <a href="https://twitter.com/<%= twitter %>" class="twitter-follow-button" data-show-count="false" data-lang="en" data-size="large" data-dnt="true">Follow @<%= twitter %></a>
@@ -68,6 +67,24 @@
     <% end %>
 
     <div id="chart"></div>
+
+    <div class="alert">
+      <p>
+        <small>
+          Please note that the IP ranges used are best effort attempts and may be inaccurate or incomplete. Any controversial edits you find should be independently verified.
+        </small>
+      </p>
+
+      <p>
+        <small>
+      <% if twitter %>
+        Please contact the <a href="https://twitter.com/<%= twitter %>">account owner</a> if you have corrections to the ranges used.
+      <% else %>
+        Please <a href="mailto:jari.bakken@gmail.com">contact me</a> if you have corrections to the ranges used.
+      <% end %>
+        </small>
+      </p>
+    </div>
 
     <table cellspacing=0 cellpadding=0>
       <thead>

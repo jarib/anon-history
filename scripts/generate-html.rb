@@ -26,6 +26,12 @@ unless ARGV.size == 2
   abort "USAGE: #{$PROGRAM_NAME} <bigquery.csv> <ranges.json>"
 end
 
+def ip_from(str)
+  IPAddr.new(str.strip)
+rescue IPAddr::InvalidAddressError => ex
+  raise "invalid ip: #{str.inspect} (#{ex.inspect})"
+end
+
 data                 = File.read(ARGV.first)
 ranges               = JSON.parse(File.read(ARGV.last)).fetch('ranges')
 rows                 = CSV.parse(data, headers: true).map(&:to_hash)
@@ -38,9 +44,9 @@ ranges.each do |name, ranges_|
   ranges_.each do |left, right|
 
     if right.nil?
-      range = IPAddr.new(left) # netmask
+      range = ip_from(left) # netmask
     else
-      range = IPAddr.new(left).to_i..IPAddr.new(right).to_i
+      range = ip_from(left).to_i..ip_from(right).to_i
     end
 
     range_to_actor[range] = name
@@ -48,7 +54,7 @@ ranges.each do |name, ranges_|
 end
 
 rows.each do |row|
-  ip_int = IPAddr.new(row['contributor_ip']).to_i
+  ip_int = ip_from(row['contributor_ip']).to_i
   actors = range_to_actor.select { |range, actor| range.include?(ip_int) }.map { |_, actor| actor }.compact
 
   if actors.empty?
