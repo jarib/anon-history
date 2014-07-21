@@ -48,3 +48,13 @@ tr:hover {
 .center { text-align: center; }
 
 .muted { color: #999; }
+
+.alert {
+    color: #8a6d3b;
+    background-color: #fcf8e3;
+    border-color: #faebcc;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
