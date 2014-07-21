@@ -40,7 +40,7 @@
       A total of <%= rows.size %> edits were found.
 
       The data comes from
-      <% if year_range != 'latest' %>
+      <% if year_range =~ /2010$/ %>
         Google BigQuery's <a href="https://developers.google.com/bigquery/docs/dataset-wikipedia">Wikipedia dataset</a>.
       <% else %>
         <a href="http://dumps.wikimedia.org/">dumps.wikimedia.org</a>.
@@ -77,11 +77,11 @@
 
       <p>
         <small>
-      <% if twitter %>
-        Please contact the <a href="https://twitter.com/<%= twitter %>">account owner</a> if you have corrections to the ranges used.
-      <% else %>
-        Please <a href="mailto:jari.bakken@gmail.com">contact me</a> if you have corrections to the ranges used.
-      <% end %>
+          <% if twitter %>
+            Please contact the <a href="https://twitter.com/<%= twitter %>">account owner</a> if you have corrections to the ranges used.
+          <% else %>
+            Please <a href="mailto:jari.bakken@gmail.com">contact me</a> if you have corrections to the ranges used.
+          <% end %>
         </small>
       </p>
     </div>
