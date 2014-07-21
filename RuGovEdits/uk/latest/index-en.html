@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <title>Anonymous Wikipedia edits from the Russian government</title>
+
+    <link href="../../../styles.css" media="all" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+      google.load("visualization", "1", {packages:["corechart"]});
+      google.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([["Year","Federal Protective Service","Ministry of education","Moscow city duma","Orenburg tax service","RSNet","Rospatent","VGTRK"],["2006",0,0,0,0,1,0,0],["2007",0,1,0,0,0,0,0],["2008",0,0,0,0,0,0,1],["2009",0,0,0,1,0,0,0],["2010",0,0,1,0,0,0,0],["2011",5,0,12,0,0,3,0],["2012",0,0,0,0,0,5,0]]);
+
+        var options = {
+          title: 'Number of edits',
+          legend: { position: 'bottom' },
+          curveType: 'function',
+          animation: { duration: 1000, easing: 'in' },
+          chartArea: { width: '90%', height: '70%', left: '8%', top: '8%' },
+          vAxis: {
+            viewWindowMode: 'explicit',
+            viewWindow: { min: 0 }
+          }
+        };
+
+        var chart = new google.visualization.ColumnChart(document.getElementById('chart'));
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+
+  <body class="container">
+    <h2>Anonymous Wikipedia edits from the Russian government</h2>
+
+    <p>
+      This is a list of anonymous edits of <a href="http://uk.wikipedia.org">uk.wikipedia.org</a> made from the IP addresses of the Russian government from 2006-2013 (<a href="http://jarib.github.io/anon-history">other sources</a>).
+      A total of 32 edits were found.
+
+      The data comes from
+
+        <a href="http://dumps.wikimedia.org/">dumps.wikimedia.org</a>.
+
+    </p>
+
+    <p>
+      You can <a href="data.csv">download</a> the raw data used for this page as CSV or see the <a href="ranges.json">IP ranges</a> used to find the edits.
+    </p>
+
+    <p>
+      Questions? <a href="mailto:jari.bakken@gmail.com">Email</a> or <a href="https://twitter.com/jarib">tweet</a> me.
+    </p>
+
+    <p>
+      <small>You can also donate through <a href="https://flattr.com/submit/auto?user_id=jarib&url=http%3A%2F%2Fjarib.github.io%2Fanon-history%2F" target="_blank"><img src="//api.flattr.com/button/flattr-badge-large.png" alt="Flattr this" title="Flattr" border="0"></a> or <script data-gittip-username="jarib" data-gittip-widget="button" src="//gttp.co/v1.js"></script> to help me pay my Google BigQuery bill.</small>
+    </p>
+
+
+      <p style="text-align: center">
+        <a href="https://twitter.com/RuGovEdits" class="twitter-follow-button" data-show-count="false" data-lang="en" data-size="large" data-dnt="true">Follow @RuGovEdits</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+      </p>
+
+
+    <div id="chart"></div>
+
+    <div class="alert">
+      <p>
+        <small>
+          Please note that the IP ranges used are best effort attempts and may be inaccurate or incomplete. Any controversial edits you find should be independently verified.
+        </small>
+      </p>
+
+      <p>
+        <small>
+
+            Please contact the <a href="https://twitter.com/RuGovEdits">account owner</a> if you have corrections to the ranges used.
+
+        </small>
+      </p>
+    </div>
+
+    <table cellspacing=0 cellpadding=0>
+      <thead>
+        <tr>
+          <th style="width: 10%">Title</th>
+          <th>Date</th>
+          <th>Source</th>
+          <th>IP</th>
+          <th style="text-align: right"></th>
+        </tr>
+      </thead>
+
+      <tbody>
+
+          <tr>
+            <td>Корнілов Володимир Олексійович</td>
+            <td>2013-04-23 13:35:11</td>
+            <td>Moscow city duma</td>
+            <td>212.11.131.215</td>
+            <td><a target="_blank" href="http://uk.wikipedia.org/w/index.php?diff=12544375">Compare</a></td>
+          </tr>
+
+          <tr>
+            <td>Девід Байрон</td>
+            <td>2013-03-22 10:37:17</td>
+            <td>Rospatent</td>
+            <td>195.208.85.215</td>
+            <td><a target="_blank" href="http://uk.wikipedia.org/w/index.php?diff=12058690">Compare</a></td>
+          </tr>
+
+          <tr>
+            <td>Циплакова Олена Октябрівна</td>
+            <td>2012-09-25 10:54:10</td>
+            <td>Rospatent</td>
+            <td>195.208.85.216</td>
+            <td><a target="_blank" href="http://uk.wikipedia.org/w/index.php?diff=10461656">Compare</a></td>
+          </tr>
+
+          <tr>
+            <td>Сергій</td>
+            <td>2012-08-29 12:58:24</td>
+            <td>Rospatent</td>
+            <td>195.208.85.216</td>
+            <td><a target="_blank" href="http://uk.wikipedia.org/w/index.php?diff=10277421">Compare</a></td>
+          </tr>
+
+          <tr>
+            <td>Сергій</td>
+            <td>2012-08-29 12:56:40</td>
+            <td>Rospatent</td>
+            <td>195.208.85.216</td>
+            <td><a target="_blank" href="http://uk.wikipedia.org/w/index.php?diff=10277399">Compare</a></td>
+          </tr>
+
+          <tr>
+            <td>Сергій</td>
+            <td>2012-08-29 12:52:46</td>
+            <td>Rospatent</td>
+            <td>195.208.85.216</td>
+            <td><a target="_blank" href="http://uk.wikipedia.org/w/index.php?diff=10277363">Compare</a></td>
+          </tr>
+
+          <tr>
+            <td>Микола</td>
+            <td>2012-08-06 12:10:23</td>
+            <td>Rospatent</td>
+            <td>195.208.85.215</td>
+            <td><a target="_blank" href="http://uk.wikipedia.org/w/index.php?diff=10104707">Compare</a></td>
+          </tr>
+
+          <tr>
+            <td>Мовчан Павло Михайлович</td>
+            <td>2011-08-19 12:30:43</td>
+            <td>Rospatent</td>
+            <td>195.208.85.215</td>
+            <td><a target="_blank" href="http://uk.wikipedia.org/w/index.php?diff=7462720">Compare</a></td>
+          </tr>
+
+          <tr>
+            <td>Мовчан Павло Михайлович</td>
+            <td>2011-08-19 12:28:21</td>
+            <td>Rospatent</td>
+            <td>195.208.85.215</td>
+            <td><a target="_blank" href="http://uk.wikipedia.org/w/index.php?diff=7462710">Compare</a></td>
+          </tr>
+
+          <tr>
+            <td>Мовчан Павло Михайлович</td>
+            <td>2011-08-19 12:27:41</td>
+            <td>Rospatent</td>
+            <td>195.208.85.215</td>
+            <td><a target="_blank" href="http://uk.wikipedia.org/w/index.php?diff=7462705">Compare</a></td>
+          </tr>
+
+          <tr>
+            <td>Соціалістичний рух «Вперед»</td>
+            <td>2011-03-05 12:54:28</td>
+            <td>Federal Protective Service</td>
+            <td>95.173.130.207</td>
+            <td><a target="_blank" href="http://uk.wikipedia.org/w/index.php?diff=6194045">Compare</a></td>
+          </tr>
+
+          <tr>
+            <td>Соціалістичний рух «Вперед»</td>
+            <td>2011-03-05 12:53:59</td>
+            <td>Federal Protective Service</td>
+            <td>95.173.130.207</td>
+            <td><a target="_blank" href="http://uk.wikipedia.org/w/index.php?diff=6194037">Compare</a></td>
+          </tr>
+
+          <tr>
+            <td>Рух опору імені Петра Алексєєва</td>
+            <td>2011-03-02 12:01:51</td>
+            <td>Federal Protective Service</td>
+            <td>95.173.130.207</td>
+            <td><a target="_blank" href="http://uk.wikipedia.org/w/index.php?diff=6165797">Compare</a></td>
+          </tr>
+
+          <tr>
+            <td>Алексєєв Петро Олексійович (революціонер)</td>
+            <td>2011-02-28 14:10:38</td>
+            <td>Federal Protective Service</td>
+            <td>95.173.130.207</td>
+            <td><a target="_blank" href="http://uk.wikipedia.org/w/index.php?diff=6145682">Compare</a></td>
+          </tr>
+
+          <tr>
+            <td>Вперед</td>
+            <td>2011-02-28 14:09:34</td>
+            <td>Federal Protective Service</td>
+            <td>95.173.130.207</td>
+            <td><a target="_blank" href="http://uk.wikipedia.org/w/index.php?diff=6145678">Compare</a></td>
+          </tr>
+
+          <tr>
+            <td>Баварський географ</td>
+            <td>2011-01-19 15:13:41</td>
+            <td>Moscow city duma</td>
+            <td>212.11.129.153</td>
+            <td><a target="_blank" href="http://uk.wikipedia.org/w/index.php?diff=5759686">Compare</a></td>
+          </tr>
+
+          <tr>
+            <td>Баварський географ</td>
+            <td>2011-01-19 15:07:22</td>
+            <td>Moscow city duma</td>
+            <td>212.11.129.153</td>
+            <td><a target="_blank" href="http://uk.wikipedia.org/w/index.php?diff=5759608">Compare</a></td>
+          </tr>
+
+          <tr>
+            <td>Баварський географ</td>
+            <td>2011-01-15 10:45:55</td>
+            <td>Moscow city duma</td>
+            <td>212.11.129.153</td>
+            <td><a target="_blank" href="http://uk.wikipedia.org/w/index.php?diff=5732327">Compare</a></td>
+          </tr>
+
+          <tr>
+            <td>Баварський географ</td>
+            <td>2011-01-15 10:42:49</td>
+            <td>Moscow city duma</td>
+            <td>212.11.129.153</td>
+            <td><a target="_blank" href="http://uk.wikipedia.org/w/index.php?diff=5732309">Compare</a></td>
+          </tr>
+
+          <tr>
+            <td>Баварський географ</td>
+            <td>2011-01-14 12:12:09</td>
+            <td>Moscow city duma</td>
+            <td>212.11.129.153</td>
+            <td><a target="_blank" href="http://uk.wikipedia.org/w/index.php?diff=5726928">Compare</a></td>
+          </tr>
+
+          <tr>
+            <td>Баварський географ</td>
+            <td>2011-01-14 12:10:50</td>
+            <td>Moscow city duma</td>
+            <td>212.11.129.153</td>
+            <td><a target="_blank" href="http://uk.wikipedia.org/w/index.php?diff=5726919">Compare</a></td>
+          </tr>
+
+          <tr>
+            <td>Баварський географ</td>
+            <td>2011-01-14 12:03:16</td>
+            <td>Moscow city duma</td>
+            <td>212.11.129.153</td>
+            <td><a target="_blank" href="http://uk.wikipedia.org/w/index.php?diff=5726875">Compare</a></td>
+          </tr>
+
+          <tr>
+            <td>Баварський географ</td>
+            <td>2011-01-13 14:20:10</td>
+            <td>Moscow city duma</td>
+            <td>212.11.129.153</td>
+            <td><a target="_blank" href="http://uk.wikipedia.org/w/index.php?diff=5721313">Compare</a></td>
+          </tr>
+
+          <tr>
+            <td>Баварський географ</td>
+            <td>2011-01-13 07:46:15</td>
+            <td>Moscow city duma</td>
+            <td>212.11.129.153</td>
+            <td><a target="_blank" href="http://uk.wikipedia.org/w/index.php?diff=5718258">Compare</a></td>
+          </tr>
+
+          <tr>
+            <td>Баварський географ</td>
+            <td>2011-01-13 07:40:31</td>
+            <td>Moscow city duma</td>
+            <td>212.11.129.153</td>
+            <td><a target="_blank" href="http://uk.wikipedia.org/w/index.php?diff=5718165">Compare</a></td>
+          </tr>
+
+          <tr>
+            <td>Баварський географ</td>
+            <td>2011-01-13 07:38:06</td>
+            <td>Moscow city duma</td>
+            <td>212.11.129.153</td>
+            <td><a target="_blank" href="http://uk.wikipedia.org/w/index.php?diff=5718118">Compare</a></td>
+          </tr>
+
+          <tr>
+            <td>Баварський географ</td>
+            <td>2011-01-13 07:31:59</td>
+            <td>Moscow city duma</td>
+            <td>212.11.129.153</td>
+            <td><a target="_blank" href="http://uk.wikipedia.org/w/index.php?diff=5718026">Compare</a></td>
+          </tr>
+
+          <tr>
+            <td>Обговорення користувача:AS</td>
+            <td>2010-07-28 11:25:22</td>
+            <td>Moscow city duma</td>
+            <td>212.11.131.212</td>
+            <td><a target="_blank" href="http://uk.wikipedia.org/w/index.php?diff=4697736">Compare</a></td>
+          </tr>
+
+          <tr>
+            <td>Нематоди</td>
+            <td>2009-12-21 11:36:33</td>
+            <td>Orenburg tax service</td>
+            <td>217.107.5.22</td>
+            <td><a target="_blank" href="http://uk.wikipedia.org/w/index.php?diff=3507987">Compare</a></td>
+          </tr>
+
+          <tr>
+            <td>Куриленко Ольга Костянтинівна</td>
+            <td>2008-10-17 02:18:43</td>
+            <td>VGTRK</td>
+            <td>80.247.45.13</td>
+            <td><a target="_blank" href="http://uk.wikipedia.org/w/index.php?diff=1932578">Compare</a></td>
+          </tr>
+
+          <tr>
+            <td>Молодь</td>
+            <td>2007-09-02 18:41:53</td>
+            <td>Ministry of education</td>
+            <td>82.179.86.39</td>
+            <td><a target="_blank" href="http://uk.wikipedia.org/w/index.php?diff=914399">Compare</a></td>
+          </tr>
+
+          <tr>
+            <td>Соціологія політики</td>
+            <td>2006-06-06 09:16:28</td>
+            <td>RSNet</td>
+            <td>194.226.86.5</td>
+            <td><a target="_blank" href="http://uk.wikipedia.org/w/index.php?diff=198498">Compare</a></td>
+          </tr>
+
+      </tbody>
+    </table>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-26481142-7', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </body>
+</html>

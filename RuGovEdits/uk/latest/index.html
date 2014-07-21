@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <title>Анонимные правки в Википедии от российских госструктур</title>
+
+    <link href="../../../styles.css" media="all" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+      google.load("visualization", "1", {packages:["corechart"]});
+      google.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([["Year","RSNet","ВГТРК","Минобром","Мосгордумой","Оренбугрской ФНС","Роспатентом","ФСО"],["2006",1,0,0,0,0,0,0],["2007",0,0,1,0,0,0,0],["2008",0,1,0,0,0,0,0],["2009",0,0,0,0,1,0,0],["2010",0,0,0,1,0,0,0],["2011",0,0,0,12,0,3,5],["2012",0,0,0,0,0,5,0]]);
+
+        var options = {
+          title: 'Количество правок',
+          legend: { position: 'bottom' },
+          curveType: 'function',
+          animation: { duration: 1000, easing: 'in' },
+          chartArea: { width: '90%', height: '70%', left: '8%', top: '8%' },
+          vAxis: {
+            viewWindowMode: 'explicit',
+            viewWindow: { min: 0 }
+          }
+        };
+
+        var chart = new google.visualization.ColumnChart(document.getElementById('chart'));
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+
+  <body class="container">
+    <h2>Анонимные правки в Википедии от российских госструктур</h2>
+
+    <p><a href="index-en.html">English version</a></p>
+
+    <p>
+      Это список всех анонимных правок на <a href="http://uk.wikipedia.org">uk.wikipedia.org</a>, сделанных с IP-адресов российских госструктур за 2006-2013 (<a href="http://jarib.github.io/anon-history">другие источники</a>).
+      Всего было найдено 32 правок.
+
+      Данные из
+
+        <a href="http://dumps.wikimedia.org/">dumps.wikimedia.org</a>.
+
+    </p>
+
+    <p>
+      Вы можете <a href="data.csv">скачать</a> сырые данные, с помощью которых была создана эта страница, в CSV, или посмотреть использованные для поиска правок <a href="ranges.json">диапазоны IP</a>.
+    </p>
+
+    <p>
+      Вопросы? Напишите мне на <a href="mailto:komachi@openmailbox.org">электронную почту</a> или <a href="https://twitter.com/AntonKomachi">отправьте твит</a>.
+    </p>
+
+    <p>
+      <small>Вы можете также пожертвовать <a href="https://flattr.com/submit/auto?user_id=jarib&url=http%3A%2F%2Fjarib.github.io%2Fanon-history%2F" target="_blank"><img src="//api.flattr.com/button/flattr-badge-large.png" alt="Flattr this" title="Flattr" border="0"></a> или <script data-gittip-username="jarib" data-gittip-widget="button" src="//gttp.co/v1.js"></script> чтобы помочь мне заплатить счет за Google BigQuery.</small>
+    </p>
+
+
+
+      <p style="text-align: center">
+        <a href="https://twitter.com/RuGovEdits" class="twitter-follow-button" data-show-count="false" data-lang="en" data-size="large" data-dnt="true">Зафолловьте @RuGovEdits</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+      </p>
+
+
+    <div id="chart"></div>
+
+    <table cellspacing=0 cellpadding=0>
+      <thead>
+        <tr>
+          <th style="width: 10%">Статья</th>
+          <th>Дата</th>
+          <th>Структура</th>
+          <th>IP</th>
+          <th style="text-align: right"></th>
+        </tr>
+      </thead>
+
+      <tbody>
+
+          <tr>
+            <td>Корнілов Володимир Олексійович</td>
+            <td>2013-04-23 13:35:11</td>
+            <td>Мосгордумой</td>
+            <td>212.11.131.215</td>
+            <td><a target="_blank" href="http://uk.wikipedia.org/w/index.php?diff=12544375">Сравнить</a></td>
+          </tr>
+
+          <tr>
+            <td>Девід Байрон</td>
+            <td>2013-03-22 10:37:17</td>
+            <td>Роспатентом</td>
+            <td>195.208.85.215</td>
+            <td><a target="_blank" href="http://uk.wikipedia.org/w/index.php?diff=12058690">Сравнить</a></td>
+          </tr>
+
+          <tr>
+            <td>Циплакова Олена Октябрівна</td>
+            <td>2012-09-25 10:54:10</td>
+            <td>Роспатентом</td>
+            <td>195.208.85.216</td>
+            <td><a target="_blank" href="http://uk.wikipedia.org/w/index.php?diff=10461656">Сравнить</a></td>
+          </tr>
+
+          <tr>
+            <td>Сергій</td>
+            <td>2012-08-29 12:58:24</td>
+            <td>Роспатентом</td>
+            <td>195.208.85.216</td>
+            <td><a target="_blank" href="http://uk.wikipedia.org/w/index.php?diff=10277421">Сравнить</a></td>
+          </tr>
+
+          <tr>
+            <td>Сергій</td>
+            <td>2012-08-29 12:56:40</td>
+            <td>Роспатентом</td>
+            <td>195.208.85.216</td>
+            <td><a target="_blank" href="http://uk.wikipedia.org/w/index.php?diff=10277399">Сравнить</a></td>
+          </tr>
+
+          <tr>
+            <td>Сергій</td>
+            <td>2012-08-29 12:52:46</td>
+            <td>Роспатентом</td>
+            <td>195.208.85.216</td>
+            <td><a target="_blank" href="http://uk.wikipedia.org/w/index.php?diff=10277363">Сравнить</a></td>
+          </tr>
+
+          <tr>
+            <td>Микола</td>
+            <td>2012-08-06 12:10:23</td>
+            <td>Роспатентом</td>
+            <td>195.208.85.215</td>
+            <td><a target="_blank" href="http://uk.wikipedia.org/w/index.php?diff=10104707">Сравнить</a></td>
+          </tr>
+
+          <tr>
+            <td>Мовчан Павло Михайлович</td>
+            <td>2011-08-19 12:30:43</td>
+            <td>Роспатентом</td>
+            <td>195.208.85.215</td>
+            <td><a target="_blank" href="http://uk.wikipedia.org/w/index.php?diff=7462720">Сравнить</a></td>
+          </tr>
+
+          <tr>
+            <td>Мовчан Павло Михайлович</td>
+            <td>2011-08-19 12:28:21</td>
+            <td>Роспатентом</td>
+            <td>195.208.85.215</td>
+            <td><a target="_blank" href="http://uk.wikipedia.org/w/index.php?diff=7462710">Сравнить</a></td>
+          </tr>
+
+          <tr>
+            <td>Мовчан Павло Михайлович</td>
+            <td>2011-08-19 12:27:41</td>
+            <td>Роспатентом</td>
+            <td>195.208.85.215</td>
+            <td><a target="_blank" href="http://uk.wikipedia.org/w/index.php?diff=7462705">Сравнить</a></td>
+          </tr>
+
+          <tr>
+            <td>Соціалістичний рух «Вперед»</td>
+            <td>2011-03-05 12:54:28</td>
+            <td>ФСО</td>
+            <td>95.173.130.207</td>
+            <td><a target="_blank" href="http://uk.wikipedia.org/w/index.php?diff=6194045">Сравнить</a></td>
+          </tr>
+
+          <tr>
+            <td>Соціалістичний рух «Вперед»</td>
+            <td>2011-03-05 12:53:59</td>
+            <td>ФСО</td>
+            <td>95.173.130.207</td>
+            <td><a target="_blank" href="http://uk.wikipedia.org/w/index.php?diff=6194037">Сравнить</a></td>
+          </tr>
+
+          <tr>
+            <td>Рух опору імені Петра Алексєєва</td>
+            <td>2011-03-02 12:01:51</td>
+            <td>ФСО</td>
+            <td>95.173.130.207</td>
+            <td><a target="_blank" href="http://uk.wikipedia.org/w/index.php?diff=6165797">Сравнить</a></td>
+          </tr>
+
+          <tr>
+            <td>Алексєєв Петро Олексійович (революціонер)</td>
+            <td>2011-02-28 14:10:38</td>
+            <td>ФСО</td>
+            <td>95.173.130.207</td>
+            <td><a target="_blank" href="http://uk.wikipedia.org/w/index.php?diff=6145682">Сравнить</a></td>
+          </tr>
+
+          <tr>
+            <td>Вперед</td>
+            <td>2011-02-28 14:09:34</td>
+            <td>ФСО</td>
+            <td>95.173.130.207</td>
+            <td><a target="_blank" href="http://uk.wikipedia.org/w/index.php?diff=6145678">Сравнить</a></td>
+          </tr>
+
+          <tr>
+            <td>Баварський географ</td>
+            <td>2011-01-19 15:13:41</td>
+            <td>Мосгордумой</td>
+            <td>212.11.129.153</td>
+            <td><a target="_blank" href="http://uk.wikipedia.org/w/index.php?diff=5759686">Сравнить</a></td>
+          </tr>
+
+          <tr>
+            <td>Баварський географ</td>
+            <td>2011-01-19 15:07:22</td>
+            <td>Мосгордумой</td>
+            <td>212.11.129.153</td>
+            <td><a target="_blank" href="http://uk.wikipedia.org/w/index.php?diff=5759608">Сравнить</a></td>
+          </tr>
+
+          <tr>
+            <td>Баварський географ</td>
+            <td>2011-01-15 10:45:55</td>
+            <td>Мосгордумой</td>
+            <td>212.11.129.153</td>
+            <td><a target="_blank" href="http://uk.wikipedia.org/w/index.php?diff=5732327">Сравнить</a></td>
+          </tr>
+
+          <tr>
+            <td>Баварський географ</td>
+            <td>2011-01-15 10:42:49</td>
+            <td>Мосгордумой</td>
+            <td>212.11.129.153</td>
+            <td><a target="_blank" href="http://uk.wikipedia.org/w/index.php?diff=5732309">Сравнить</a></td>
+          </tr>
+
+          <tr>
+            <td>Баварський географ</td>
+            <td>2011-01-14 12:12:09</td>
+            <td>Мосгордумой</td>
+            <td>212.11.129.153</td>
+            <td><a target="_blank" href="http://uk.wikipedia.org/w/index.php?diff=5726928">Сравнить</a></td>
+          </tr>
+
+          <tr>
+            <td>Баварський географ</td>
+            <td>2011-01-14 12:10:50</td>
+            <td>Мосгордумой</td>
+            <td>212.11.129.153</td>
+            <td><a target="_blank" href="http://uk.wikipedia.org/w/index.php?diff=5726919">Сравнить</a></td>
+          </tr>
+
+          <tr>
+            <td>Баварський географ</td>
+            <td>2011-01-14 12:03:16</td>
+            <td>Мосгордумой</td>
+            <td>212.11.129.153</td>
+            <td><a target="_blank" href="http://uk.wikipedia.org/w/index.php?diff=5726875">Сравнить</a></td>
+          </tr>
+
+          <tr>
+            <td>Баварський географ</td>
+            <td>2011-01-13 14:20:10</td>
+            <td>Мосгордумой</td>
+            <td>212.11.129.153</td>
+            <td><a target="_blank" href="http://uk.wikipedia.org/w/index.php?diff=5721313">Сравнить</a></td>
+          </tr>
+
+          <tr>
+            <td>Баварський географ</td>
+            <td>2011-01-13 07:46:15</td>
+            <td>Мосгордумой</td>
+            <td>212.11.129.153</td>
+            <td><a target="_blank" href="http://uk.wikipedia.org/w/index.php?diff=5718258">Сравнить</a></td>
+          </tr>
+
+          <tr>
+            <td>Баварський географ</td>
+            <td>2011-01-13 07:40:31</td>
+            <td>Мосгордумой</td>
+            <td>212.11.129.153</td>
+            <td><a target="_blank" href="http://uk.wikipedia.org/w/index.php?diff=5718165">Сравнить</a></td>
+          </tr>
+
+          <tr>
+            <td>Баварський географ</td>
+            <td>2011-01-13 07:38:06</td>
+            <td>Мосгордумой</td>
+            <td>212.11.129.153</td>
+            <td><a target="_blank" href="http://uk.wikipedia.org/w/index.php?diff=5718118">Сравнить</a></td>
+          </tr>
+
+          <tr>
+            <td>Баварський географ</td>
+            <td>2011-01-13 07:31:59</td>
+            <td>Мосгордумой</td>
+            <td>212.11.129.153</td>
+            <td><a target="_blank" href="http://uk.wikipedia.org/w/index.php?diff=5718026">Сравнить</a></td>
+          </tr>
+
+          <tr>
+            <td>Обговорення користувача:AS</td>
+            <td>2010-07-28 11:25:22</td>
+            <td>Мосгордумой</td>
+            <td>212.11.131.212</td>
+            <td><a target="_blank" href="http://uk.wikipedia.org/w/index.php?diff=4697736">Сравнить</a></td>
+          </tr>
+
+          <tr>
+            <td>Нематоди</td>
+            <td>2009-12-21 11:36:33</td>
+            <td>Оренбугрской ФНС</td>
+            <td>217.107.5.22</td>
+            <td><a target="_blank" href="http://uk.wikipedia.org/w/index.php?diff=3507987">Сравнить</a></td>
+          </tr>
+
+          <tr>
+            <td>Куриленко Ольга Костянтинівна</td>
+            <td>2008-10-17 02:18:43</td>
+            <td>ВГТРК</td>
+            <td>80.247.45.13</td>
+            <td><a target="_blank" href="http://uk.wikipedia.org/w/index.php?diff=1932578">Сравнить</a></td>
+          </tr>
+
+          <tr>
+            <td>Молодь</td>
+            <td>2007-09-02 18:41:53</td>
+            <td>Минобром</td>
+            <td>82.179.86.39</td>
+            <td><a target="_blank" href="http://uk.wikipedia.org/w/index.php?diff=914399">Сравнить</a></td>
+          </tr>
+
+          <tr>
+            <td>Соціологія політики</td>
+            <td>2006-06-06 09:16:28</td>
+            <td>RSNet</td>
+            <td>194.226.86.5</td>
+            <td><a target="_blank" href="http://uk.wikipedia.org/w/index.php?diff=198498">Сравнить</a></td>
+          </tr>
+
+      </tbody>
+    </table>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-26481142-7', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </body>
+</html>
