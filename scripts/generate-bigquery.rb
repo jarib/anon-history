@@ -44,13 +44,18 @@ SQL
 
 conditions = []
 
+def find_range(netmask)
+  range = IPAddr.new(netmask).to_range
+  [range.first.to_s, range.last.to_s]
+rescue IPAddr::InvalidAddressError => ex
+  raise "invalid range: #{netmask.inspect} (#{ex.message} - #{ex.class})"
+end
+
 ranges = JSON.parse(open(ARGV.first).read).fetch('ranges')
 ranges.each do |name, ranges|
   ranges.each do |start, stop|
     if stop.nil?
-      range = IPAddr.new(start).to_range
-      start = range.first.to_s
-      stop = range.last.to_s
+      start, stop = find_range(start)
     end
 
     conditions << "(PARSE_IP(contributor_ip) >= PARSE_IP(#{start.inspect}) AND PARSE_IP(contributor_ip) <= PARSE_IP(#{stop.inspect})) # #{name}"
