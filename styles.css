@@ -38,11 +38,8 @@ td, th {
     padding: 3px;
 }
 
-dl > dd {
-    padding-bottom: .3em;
-}
 
-ul { margin-top: .3em; padding: .2em;}
+ul { margin-top: .2em; padding: .2em;}
 
 tr:hover {
     background-color: #efefef;
