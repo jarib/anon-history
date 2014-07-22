@@ -35,9 +35,10 @@ SELECT
   revision_id,
   timestamp,
   contributor_ip,
+  PARSE_IP(contributor_ip) as contributor_ip_int
 FROM #{table_name}
-WHERE (
- %s
+HAVING (
+  %s
 )
 ORDER BY timestamp DESC
 SQL
@@ -45,7 +46,7 @@ SQL
 conditions = []
 
 def find_range(netmask)
-  range = IPAddr.new(netmask).to_range
+  range = IPAddr.new().to_range
   [range.first.to_s, range.last.to_s]
 rescue IPAddr::InvalidAddressError => ex
   raise "invalid range: #{netmask.inspect} (#{ex.message} - #{ex.class})"
@@ -58,7 +59,7 @@ ranges.each do |name, ranges|
       start, stop = find_range(start)
     end
 
-    conditions << "(PARSE_IP(contributor_ip) >= PARSE_IP(#{start.inspect}) AND PARSE_IP(contributor_ip) <= PARSE_IP(#{stop.inspect})) # #{name}"
+    conditions << "(contributor_ip_int >= PARSE_IP(#{start.inspect}) AND contributor_ip_int <= PARSE_IP(#{stop.inspect})) # #{name}"
   end
 end
 
