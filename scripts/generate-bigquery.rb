@@ -46,7 +46,7 @@ SQL
 conditions = []
 
 def find_range(netmask)
-  range = IPAddr.new().to_range
+  range = IPAddr.new(netmask).to_range
   [range.first.to_s, range.last.to_s]
 rescue IPAddr::InvalidAddressError => ex
   raise "invalid range: #{netmask.inspect} (#{ex.message} - #{ex.class})"
