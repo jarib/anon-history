@@ -7,10 +7,12 @@ require 'optparse'
 
 lang = 'en'
 old = false
+where = false
 
 OptionParser.new { |o|
-  o.on('-w', '--wiki LANG', 'The wiki langauge to use') { |l| lang = l }
+  o.on('-l', '--lang LANG', 'The wiki langauge to use') { |l| lang = l }
   o.on('-o', '--old', 'Use the old sample dataset (2002-2010).') { old = true }
+  o.on('-w', '--where', 'Use a WHERE clause instead of HAVING') { where = true }
 }.parse!(ARGV)
 
 if ARGV.size != 1
@@ -37,7 +39,7 @@ SELECT
   contributor_ip,
   PARSE_IP(contributor_ip) as contributor_ip_int
 FROM #{table_name}
-HAVING (
+#{where ? 'WHERE' : 'HAVING'} (
   %s
 )
 ORDER BY timestamp DESC
@@ -59,7 +61,11 @@ ranges.each do |name, ranges|
       start, stop = find_range(start)
     end
 
-    conditions << "(contributor_ip_int >= PARSE_IP(#{start.inspect}) AND contributor_ip_int <= PARSE_IP(#{stop.inspect})) # #{name}"
+    if where
+      conditions << "(PARSE_IP(contributor_ip) >= PARSE_IP(#{start.inspect}) AND PARSE_IP(contributor_ip) <= PARSE_IP(#{stop.inspect})) # #{name}"
+    else
+      conditions << "(contributor_ip_int >= PARSE_IP(#{start.inspect}) AND contributor_ip_int <= PARSE_IP(#{stop.inspect})) # #{name}"
+    end
   end
 end
 

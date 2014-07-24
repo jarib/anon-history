@@ -34,7 +34,7 @@ ranges_path.open('w') { |io| io << {ranges: ranges}.to_json }
 if old
   query = `scripts/generate-bigquery.rb --old #{ranges_path} 2>&1`
 else
-  query = `scripts/generate-bigquery.rb --wiki #{lang} #{ranges_path} 2>&1`
+  query = `scripts/generate-bigquery.rb --lang #{lang} #{ranges_path} 2>&1`
 end
 
 abort query unless $?.success?
@@ -47,8 +47,8 @@ puts "Then press any key"
 
 STDIN.gets || abort
 
-#html = `scripts/generate-html.rb --erb scripts/template-ru.html.erb --source '#{source}' --wiki #{lang} --twitter '#{twitter}' #{data_path} #{ranges_path} 2>&1`
-html = `scripts/generate-html.rb --source '#{source}' --wiki #{lang} --twitter '#{twitter}' #{data_path} #{ranges_path} 2>&1`
+#html = `scripts/generate-html.rb --erb scripts/template-ru.html.erb --source '#{source}' --lang #{lang} --twitter '#{twitter}' #{data_path} #{ranges_path} 2>&1`
+html = `scripts/generate-html.rb --source '#{source}' --lang #{lang} --twitter '#{twitter}' #{data_path} #{ranges_path} 2>&1`
 abort html unless $?.success?
 html_path.open('w') { |io| io << html }
 

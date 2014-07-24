@@ -18,7 +18,7 @@ OptionParser.new do |opts|
   opts.on('-s', '--source SOURCE_NAME') { |s| title_source = s }
   opts.on('-t', '--twitter USERNAME') { |t| twitter = t }
   opts.on('-e', '--erb TEMPLATE_PATH') { |t| template_path = t }
-  opts.on('-w', '--wiki WIKI_LANG') { |w| wiki_lang = w }
+  opts.on('-l', '--lang WIKI_LANG') { |w| wiki_lang = w }
   opts.on('-h', '--help') { puts opts; exit 1 }
 end.parse!(ARGV)
 
