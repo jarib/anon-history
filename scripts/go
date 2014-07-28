@@ -10,8 +10,8 @@ twitter = ARGV.shift or abort "no twitter handle given"
 source  = ARGV.shift or abort "no source name given"
 lang    = ARGV.shift or abort "no wiki lang given"
 
-conf   = JSON.parse(open(url).read)
-ranges = conf['ranges'] || conf['accounts'].last['ranges']
+ranges  = JSON.parse(open(url).read)
+
 
 case lang
 when 'en.public'
