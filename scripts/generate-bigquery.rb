@@ -56,16 +56,24 @@ end
 
 ranges = JSON.parse(open(ARGV.first).read).fetch('ranges')
 ranges.each do |name, ranges|
-  ranges.each do |start, stop|
+  ranges.each do |start, stop, opts|
     if stop.nil?
       start, stop = find_range(start)
     end
 
-    if where
-      conditions << "(PARSE_IP(contributor_ip) >= PARSE_IP(#{start.inspect}) AND PARSE_IP(contributor_ip) <= PARSE_IP(#{stop.inspect})) # #{name}"
+    if opts && opts['from'] && opts['to']
+      date_condition = " AND (timestamp >= #{Time.parse(opts['from']).to_i} AND timestamp <= #{Time.parse(opts['to']).to_i})"
     else
-      conditions << "(contributor_ip_int >= PARSE_IP(#{start.inspect}) AND contributor_ip_int <= PARSE_IP(#{stop.inspect})) # #{name}"
+      date_condition = ''
     end
+
+
+    if where
+      conditions << "(PARSE_IP(contributor_ip) >= PARSE_IP(#{start.inspect}) AND PARSE_IP(contributor_ip) <= PARSE_IP(#{stop.inspect})#{date_condition}) # #{name}"
+    else
+      conditions << "(contributor_ip_int >= PARSE_IP(#{start.inspect}) AND contributor_ip_int <= PARSE_IP(#{stop.inspect})#{date_condition}) # #{name}"
+    end
+
   end
 end
 
