@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <title>Anonymous Wikipedia edits from the Italian government</title>
+
+    <link href="../../../styles.css" media="all" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+      google.load("visualization", "1", {packages:["corechart"]});
+      google.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([["Year","Senato della Repubblica"]]);
+
+        var options = {
+          title: 'Number of edits',
+          legend: { position: 'bottom' },
+          curveType: 'function',
+          animation: { duration: 1000, easing: 'in' },
+          chartArea: { width: '90%', height: '70%', left: '8%', top: '8%' },
+          vAxis: {
+            viewWindowMode: 'explicit',
+            viewWindow: { min: 0 }
+          }
+        };
+
+        var chart = new google.visualization.ColumnChart(document.getElementById('chart'));
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+
+  <body class="container">
+    <h2>Anonymous Wikipedia edits from the Italian government</h2>
+
+    <p>
+      This is a list of anonymous edits of <a href="http://uk.wikipedia.org">uk.wikipedia.org</a> made from the IP addresses of the Italian government from 2008-2008 (<a href="http://jarib.github.io/anon-history">other sources</a>).
+      A total of 1 edits were found.
+
+      The data comes from
+      
+        <a href="http://dumps.wikimedia.org/">dumps.wikimedia.org</a>.
+      
+    </p>
+
+    <p>
+      You can <a href="data.csv">download</a> the raw data used for this page as CSV or see the <a href="ranges.json">IP ranges</a> used to find the edits.
+    </p>
+
+    <p>
+      Questions? <a href="mailto:jari.bakken@gmail.com">Email</a> or <a href="https://twitter.com/jarib">tweet</a> me.
+    </p>
+
+    <p>
+      <small>You can also donate through <a href="https://flattr.com/submit/auto?user_id=jarib&url=http%3A%2F%2Fjarib.github.io%2Fanon-history%2F" target="_blank"><img src="//api.flattr.com/button/flattr-badge-large.png" alt="Flattr this" title="Flattr" border="0"></a> or <script data-gittip-username="jarib" data-gittip-widget="button" src="//gttp.co/v1.js"></script> to help me pay my Google BigQuery bill.</small>
+    </p>
+
+    
+      <p style="text-align: center">
+        <a href="https://twitter.com/ItaGovEdits" class="twitter-follow-button" data-show-count="false" data-lang="en" data-size="large" data-dnt="true">Follow @ItaGovEdits</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+      </p>
+    
+
+    <div id="chart"></div>
+
+    <div class="alert">
+      <p>
+        <small>
+          Please note that the IP ranges used are best effort attempts and may be inaccurate or incomplete. Any controversial edits you find should be independently verified.
+        </small>
+      </p>
+
+      <p>
+        <small>
+          
+            Please contact the <a href="https://twitter.com/ItaGovEdits">account owner</a> if you have corrections to the ranges used.
+          
+        </small>
+      </p>
+    </div>
+
+    <table cellspacing=0 cellpadding=0>
+      <thead>
+        <tr>
+          <th style="width: 10%">Title</th>
+          <th>Date</th>
+          <th>Source</th>
+          <th>IP</th>
+          <th style="text-align: right"></th>
+        </tr>
+      </thead>
+
+      <tbody>
+        
+          <tr>
+            <td>Емпора</td>
+            <td>2008-01-14 16:15:25</td>
+            <td>Senato della Repubblica</td>
+            <td>82.112.217.1</td>
+            <td><a target="_blank" href="http://uk.wikipedia.org/w/index.php?diff=1213614">Compare</a></td>
+          </tr>
+        
+      </tbody>
+    </table>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-26481142-7', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </body>
+</html>
