@@ -57,9 +57,12 @@ end
 ranges = JSON.parse(open(ARGV.first).read).fetch('ranges')
 ranges.each do |name, ranges|
   ranges.each do |start, stop, opts|
+    STDERR.puts [start, stop, opts].inspect
     if stop.nil?
       start, stop = find_range(start)
     end
+
+    STDERR.puts [start, stop].inspect
 
     if opts && opts['from'] && opts['to']
       date_condition = " AND (timestamp >= #{Time.parse(opts['from']).to_i} AND timestamp <= #{Time.parse(opts['to']).to_i})"
