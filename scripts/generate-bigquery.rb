@@ -55,14 +55,11 @@ rescue IPAddr::InvalidAddressError => ex
 end
 
 ranges = JSON.parse(open(ARGV.first).read).fetch('ranges')
-ranges.each do |name, ranges|
-  ranges.each do |start, stop, opts|
-    STDERR.puts [start, stop, opts].inspect
+ranges.each do |name, rs|
+  rs.each do |start, stop, opts|
     if stop.nil?
       start, stop = find_range(start)
     end
-
-    STDERR.puts [start, stop].inspect
 
     if opts && opts['from'] && opts['to']
       date_condition = " AND (timestamp >= #{Time.parse(opts['from']).to_i} AND timestamp <= #{Time.parse(opts['to']).to_i})"
