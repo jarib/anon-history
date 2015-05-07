@@ -22,7 +22,7 @@ The convert-to-csv script comes from https://github.com/jarib/wikipedia-edits (w
 
 ### Import to BigQuery table
 
-In the Google BigQuery UI, import `wikis.it.csv.gz` from Google Storage to a table called "wikis.it".
+In the Google BigQuery UI, import `wikis.it.csv.gz` from Google Storage to a table called `wikis.it`.
 
 ### Generate and execute query
 
