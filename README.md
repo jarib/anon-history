@@ -26,7 +26,7 @@ In the Google BigQuery UI, import `wikis.it.csv.gz` from Google Storage to a tab
 
 ### Generate and execute query
 
-Clone https://github.com/jarib/anon-history, then create e.g. /tmp/ranges.json with ranges in the following format:
+Clone https://github.com/jarib/anon-history, then create e.g. `/tmp/ranges.json` with ranges in the following format:
 
 ```json
 {
